@@ -1,0 +1,241 @@
+
+		
+
+"Silang" : { 
+			"name":"exit1", 
+			"x": "187", 
+			"y": "178",
+			"class":"exit"
+		}
+
+"Silang" : { 
+			"name":"exit2", 
+			"x": "266", 
+			"y": "232",
+			"class":"exit"
+		}
+
+"Silang" : { 
+			"name":"exit3", 
+			"x": "195", 
+			"y": "199",
+			"class":"exit"
+		}
+
+"Silang" : { 
+			"name":"exit4", 
+			"x": "147", 
+			"y": "217",
+			"class":"exit"
+		}
+
+"Silang" : { 
+			"name":"exit5", 
+			"x": "114", 
+			"y": "283",
+			"class":"exit"
+		}
+
+"Aden" : { 
+			"name":"exit1", 
+			"x": "309", 
+			"y": "261",
+			"class":"exit"
+		}
+
+"Aden" : { 
+			"name":"exit2", 
+			"x": "325", 
+			"y": "316",
+			"class":"exit"
+		}
+
+"Aden" : { 
+			"name":"exit3", 
+			"x": "388", 
+			"y": "310",
+			"class":"exit"
+		}
+
+"Rizal" : { 
+			"name":"exit1", 
+			"x": "306", 
+			"y": "343",
+			"class":"exit"
+		}
+
+"Rizal" : { 
+			"name":"exit2", 
+			"x": "285", 
+			"y": "378",
+			"class":"exit"
+		}
+
+"Hahn" : { 
+			"name":"exit1", 
+			"x": "393", 
+			"y": "384",
+			"class":"exit"
+		}
+
+"Hahn" : { 
+			"name":"exit2", 
+			"x": "375", 
+			"y": "376",
+			"class":"exit"
+		}
+
+"Hahn" : { 
+			"name":"exit3", 
+			"x": "367", 
+			"y": "391",
+			"class":"exit"
+		}
+
+"Hahn" : { 
+			"name":"exit4", 
+			"x": "325", 
+			"y": "470",
+			"class":"exit"
+		}
+
+"Hahn" : { 
+			"name":"exit5", 
+			"x": "348", 
+			"y": "424",
+			"class":"exit"
+		}
+
+"Db" : { 
+			"name":"exit1", 
+			"x": "319", 
+			"y": "529",
+			"class":"exit"
+		}
+
+"Db" : { 
+			"name":"exit2", 
+			"x": "339", 
+			"y": "540",
+			"class":"exit"
+		}
+
+"Mm" : { 
+			"name":"exit1", 
+			"x": "344", 
+			"y": "605",
+			"class":"exit"
+		}
+
+"Mm" : { 
+			"name":"exit2", 
+			"x": "389", 
+			"y": "577",
+			"class":"exit"
+		}
+
+"Mm" : { 
+			"name":"exit3", 
+			"x": "384", 
+			"y": "621",
+			"class":"exit"
+		}
+
+"Cca" : { 
+			"name":"exit1", 
+			"x": "112", 
+			"y": "429",
+			"class":"exit"
+		}
+
+"Vath" : { 
+			"name":"exit1", 
+			"x": "171", 
+			"y": "350",
+			"class":"exit"
+		}
+
+"Vath" : { 
+			"name":"exit2", 
+			"x": "210", 
+			"y": "382",
+			"class":"exit"
+		}
+
+"Gym" : { 
+			"name":"exit1", 
+			"x": "136", 
+			"y": "372",
+			"class":"exit"
+		}
+
+"Gym" : { 
+			"name":"exit2", 
+			"x": "126", 
+			"y": "327",
+			"class":"exit"
+		}
+
+"Gym" : { 
+			"name":"exit3", 
+			"x": "136", 
+			"y": "371",
+			"class":"exit"
+		}
+
+"Dh" : { 
+			"name":"exit1", 
+			"x": "161", 
+			"y": "87",
+			"class":"exit"
+		}
+
+"Dh" : { 
+			"name":"exit2", 
+			"x": "194", 
+			"y": "118",
+			"class":"exit"
+		}
+
+"Perfecto" : { 
+			"name":"exit1", 
+			"x": "249", 
+			"y": "136",
+			"class":"exit"
+		}
+
+"Perfecto" : { 
+			"name":"exit2", 
+			"x": "228", 
+			"y": "163",
+			"class":"exit"
+		}
+
+"Perfecto" : { 
+			"name":"exit3", 
+			"x": "308", 
+			"y": "172",
+			"class":"exit"
+		}
+
+"Perfecto" : { 
+			"name":"exit4", 
+			"x": "313", 
+			"y": "204",
+			"class":"exit"
+		}
+
+"Chapel" : { 
+			"name":"exit1", 
+			"x": "201", 
+			"y": "147",
+			"class":"exit"
+		}
+
+"MainGate" : { 
+			"name":"exit1", 
+			"x": "107", 
+			"y": "134",
+			"class":"exit"
+		}																										
+
