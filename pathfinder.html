@@ -1,0 +1,42 @@
+<style>
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+</Style>
+
+
+<svg style="width: 557px; height: 701px; margin: 0px; padding: 0px; background: url(trial_map/map.svg) center center no-repeat scroll; version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="557px"
+     height="701px" viewBox="0 0 557 701" enable-background="new 0 0 557 701" xml:space="preserve">
+
+</svg>
+
+
+<script>
+
+function parseSVG(s) {
+    var div = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
+    div.innerHTML= '<svg xmlns="http://www.w3.org/2000/svg">'+ s +'</svg>';
+    var frag = document.createDocumentFragment();
+    while (div.firstChild.firstChild)
+        frag.appendChild(div.firstChild.firstChild);
+    return frag;
+}
+
+function show() {
+    document.getElementsByTagName("svg")[0].innerHTML = "";
+    var points = document.getElementById("points").value;
+    var e = "<polyline  fill='none' stroke='red'  stroke-width='3' points='"+points+"'></polyline>";
+    document.getElementsByTagName("svg")[0].appendChild(parseSVG(e));
+}
+</script>
+
+<div style="position: fixed; right: 10px; top: 0px">
+<p>
+<h1>Enter points </h1> 
+<span style="color:red">NOTE: Separate every x-y pair by a comma. eg (x y, x y, x y)</span><br><br>
+<textarea id="points" style="width: 300px; height: 200px;">001 231, 231 343, 522 343, 299 32, 12 323</textarea><br><br>
+<input type="button" value="show" onclick="show();">
+</p>
+</div>
+
