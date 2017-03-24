@@ -1,0 +1,91 @@
+"multiMediaLib" : 
+			{ 
+			"pointname":"Multi Media Library", 
+			"building":"Vath",
+			"floor":"4",
+			"x": "276", 
+			"y": "642",
+			"class":"interest"
+},
+"filipinianaLib" : 
+			{ 
+			"pointname":"Filipiniana Library", 
+			"building":"Vath",
+			"floor":"4",
+			"x": "276", 
+			"y": "642",
+			"class":"interest"
+},
+"psychLib" : 
+			{ 
+			"pointname":"Philosophy/Psychology Library", 
+			"building":"Vath",
+			"floor":"5",
+			"x": "244", 
+			"y": "633",
+			"class":"interest"
+},
+"languageLib" : 
+			{ 
+			"pointname":"Language Library", 
+			"building":"Vath",
+			"floor":"5",
+			"x": "244", 
+			"y": "633",
+			"class":"interest"
+},
+"religionLib" : 
+			{ 
+			"pointname":"Religion Library", 
+			"building":"Vath",
+			"floor":"5",
+			"x": "272", 
+			"y": "650",
+			"class":"interest"
+},
+"socialSciencesLib" : 
+			{ 
+			"pointname":"Social Sciences Library", 
+			"building":"Vath",
+			"floor":"5",
+			"x": "326", 
+			"y": "556",
+			"class":"interest"
+},
+"puresScienceLib" : 
+			{ 
+			"pointname":"Pure Science Library", 
+			"building":"Vath",
+			"floor":"6",
+			"x": "244", 
+			"y": "633",
+			"class":"interest"
+},
+"historyLib" : 
+			{ 
+			"pointname":"History/Geography Library", 
+			"building":"Vath",
+			"floor":"6",
+			"x": "244", 
+			"y": "633",
+			"class":"interest"
+},
+"appliedScienceLib" : 
+			{ 
+			"pointname":"Applied Science Library", 
+			"building":"Vath",
+			"floor":"6",
+			"x": "272", 
+			"y": "650",
+			"class":"interest"
+},
+"artsLib" : 
+			{ 
+			"pointname":"Arts/Allied Sciences Library", 
+			"building":"Vath",
+			"floor":"6",
+			"x": "326", 
+			"y": "556",
+			"class":"interest"
+},
+
