@@ -1,0 +1,174 @@
+"MainGate" : { 
+			"name":"exit1", 
+			"x": "141", 
+			"y": "206",
+			"class":"exit"
+		},
+
+"Silang" : { 
+			"name":"exit1", 
+			"x": "250", 
+			"y": "301",
+			"class":"exit"
+		},
+
+"Silang" : { 
+			"name":"exit2", 
+			"x": "297", 
+			"y": "325",
+			"class":"exit"
+		},
+
+"Silang" : { 
+			"name":"exit3", 
+			"x": "236", 
+			"y": "343",
+			"class":"exit"
+		},
+
+"Silang" : { 
+			"name":"exit4", 
+			"x": "165", 
+			"y": "442",
+			"class":"exit"
+		},
+
+"Silang" : { 
+			"name":"exit5", 
+			"x": "376", 
+			"y": "386",
+			"class":"exit"
+		},
+
+"Silang" : { 
+			"name":"exit6", 
+			"x": "401", 
+			"y": "366",
+			"class":"exit"
+		},
+
+"Silang" : { 
+			"name":"exit7", 
+			"x": "228", 
+			"y": "375",
+			"class":"exit"
+		},
+
+"Dh" : { 
+			"name":"exit1", 
+			"x": "229", 
+			"y": "114",
+			"class":"exit"
+		},
+
+"Dh" : { 
+			"name":"exit2", 
+			"x": "289", 
+			"y": "158",
+			"class":"exit"
+		},
+
+"Dh" : { 
+			"name":"exit3", 
+			"x": "282", 
+			"y": "182",
+			"class":"exit"
+		},
+
+"Chapel" : { 
+			"name":"exit1", 
+			"x": "289", 
+			"y": "187",
+			"class":"exit"
+		},
+
+"Chapel" : { 
+			"name":"exit2", 
+			"x": "299", 
+			"y": "222",
+			"class":"exit"
+		},
+
+"Chapel" : { 
+			"name":"exit3", 
+			"x": "310", 
+			"y": "167",
+			"class":"exit"
+		},
+
+"Perfecto" : { 
+			"name":"exit1", 
+			"x": "334", 
+			"y": "244",
+			"class":"exit"
+		},
+
+"Perfecto" : { 
+			"name":"exit2", 
+			"x": "466", 
+			"y": "318",
+			"class":"exit"
+		},
+
+"Perfecto" : { 
+			"name":"exit3", 
+			"x": "467", 
+			"y": "284",
+			"class":"exit"
+		},
+
+"Aden" : { 
+			"name":"exit1", 
+			"x": "445", 
+			"y": "394",
+			"class":"exit"
+		},
+
+"Aden" : { 
+			"name":"exit2", 
+			"x": "423", 
+			"y": "431",
+			"class":"exit"
+		},
+
+"Aden" : { 
+			"name":"exit3", 
+			"x": "474", 
+			"y": "506",
+			"class":"exit"
+		},
+
+"Aden" : { 
+			"name":"exit4", 
+			"x": "543", 
+			"y": "510",
+			"class":"exit"
+		},
+
+"Rizal" : { 
+			"name":"exit1", 
+			"x": "436", 
+			"y": "553",
+			"class":"exit"
+		},
+
+"Rizal" : { 
+			"name":"exit2", 
+			"x": "450", 
+			"y": "565",
+			"class":"exit"
+		},
+
+"Rizal" : { 
+			"name":"exit3", 
+			"x": "408", 
+			"y": "617",
+			"class":"exit"
+		},
+
+"Canteen" : { 
+			"name":"exit4", 
+			"x": "427", 
+			"y": "648",
+			"class":"exit"
+		}, 
