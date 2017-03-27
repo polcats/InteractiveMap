@@ -1,0 +1,133 @@
+
+		
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Male", 
+			"building":"Aden",
+			"floor": "1",
+			"x": "520", 
+			"y": "506",
+			"class":"interest"
+}
+
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Female", 
+			"building":"Aden",
+			"floor": "1",
+			"x": "536", 
+			"y": "466",
+			"class":"interest"
+}
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Male", 
+			"building":"Aden",
+			"floor": "2",
+			"x": "520", 
+			"y": "506",
+			"class":"interest"
+}
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Female", 
+			"building":"Aden",
+			"floor": "2",
+			"x": "536", 
+			"y": "466",
+			"class":"interest"
+}
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Male", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "520", 
+			"y": "506",
+			"class":"interest"
+}
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Female", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "536", 
+			"y": "466",
+			"class":"interest"
+}
+
+"Department" : 
+			{ 
+			"pointname":"Department of Mining Engineering", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "536", 
+			"y": "524",
+			"class":"interest"
+}
+
+"Department" : 
+			{ 
+			"pointname":"Department of Chemical Engineering", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "416", 
+			"y": "446",
+			"class":"interest"
+}
+
+"Faculty Room" : 
+			{ 
+			"pointname":"Chemical Engineering Faculty Room", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "428", 
+			"y": "440",
+			"class":"interest"
+}
+
+"Office" : 
+			{ 
+			"pointname":"Chemistry Lab Office", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "564", 
+			"y": "472",
+			"class":"interest"
+}
+
+"Office" : 
+			{ 
+			"pointname":"Laboratory Technician Office", 
+			"building":"Aden",
+			"floor": "1",
+			"x": "436", 
+			"y": "448",
+			"class":"interest"
+}
+
+"Work Room" : 
+			{ 
+			"pointname":"Equipment & Work Room", 
+			"building":"Aden",
+			"floor": "1",
+			"x": "564", 
+			"y": "473",
+			"class":"interest"
+}
+
+"Faculty Room" : 
+			{ 
+			"pointname":"Physics Faculty Room", 
+			"building":"Aden",
+			"floor": "2",
+			"x": "429", 
+			"y": "449",
+			"class":"interest"
+}
