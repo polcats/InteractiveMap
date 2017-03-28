@@ -16,6 +16,24 @@
 			"y": "642",
 			"class":"interest"
 },
+"crLadyFouthFloor" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Vath",
+			"floor":"4",
+			"x": "316", 
+			"y": "510",
+			"class":"interest"
+},
+"crMenFouthFloor" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Vath",
+			"floor":"4",
+			"x": "228", 
+			"y": "666",
+			"class":"interest"
+},
 "psychLib" : 
 			{ 
 			"pointname":"Philosophy/Psychology Library", 
@@ -50,6 +68,24 @@
 			"floor":"5",
 			"x": "326", 
 			"y": "556",
+			"class":"interest"
+},
+"crLadyFifthFloor" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Vath",
+			"floor":"5",
+			"x": "316", 
+			"y": "510",
+			"class":"interest"
+},
+"crMenFifthFloor" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Vath",
+			"floor":"5",
+			"x": "228", 
+			"y": "666",
 			"class":"interest"
 },
 "puresScienceLib" : 
@@ -87,5 +123,23 @@
 			"x": "326", 
 			"y": "556",
 			"class":"interest"
-}
+},
+"crLadySixthFloor" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Vath",
+			"floor":"6",
+			"x": "316", 
+			"y": "510",
+			"class":"interest"
+},
+"crMenSixthFloor" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Vath",
+			"floor":"6",
+			"x": "228", 
+			"y": "666",
+			"class":"interest"
+},
 
