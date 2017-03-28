@@ -1,8 +1,8 @@
 "Boiler Room" : 
 			{ 
 			"pointname":"Boiler Room", 
-            "building":"Otto Hahn",
-            "floor": "1",
+            		"building":"Otto Hahn",
+            		"floor": "1",
 			"x": "504", 
 			"y": "754",
 			"class": "interest"
@@ -317,4 +317,4 @@
             "x": "480",
             "y": "783",
             "class":"interest"
-},
+}
