@@ -1,0 +1,320 @@
+"Boiler Room" : 
+			{ 
+			"pointname":"Boiler Room", 
+            "building":"Otto Hahn",
+            "floor": "1",
+			"x": "504", 
+			"y": "754",
+			"class": "interest"
+},
+
+
+"Testing Materials" :
+            {
+            "pointname": "Testing Materials",
+            "building": "Otto Hahn",
+            "floor": "1",
+            "x": "514",
+            "y": "734",
+            "class": "interest"
+},
+
+"Foundry" :
+            {
+            "pointname": "Foundry",
+            "building": "Otto Hahn",
+            "floor": "1",
+            "x": "526",
+            "y": "715",
+            "class": "interest"
+},
+
+"Office 6" :
+            {
+            "pointname": "Office",
+            "building": "Otto Hahn",
+            "floor": "2",
+            "x": "538",
+            "y": "667",
+            "class": "interest"
+},
+
+"Office 5" :
+            {
+            "pointname": "Office",
+            "building": "Otto Hahn",
+            "floor": "2",
+            "x": "496",
+            "y": "730",
+            "class": "interest"
+},
+
+"Mechanical Shop" :
+            {
+            "pointname": "Mechanical Shop",
+            "building": "Otto Hahn",
+            "floor": "2",
+            "x": "518",
+            "y": "697",
+            "class": "interest"
+},
+
+"Office of Mechanical" :
+            {
+            "pointname": "Office of Mechanical",
+            "building": "Otto Hahn",
+            "floor": "2",
+            "x": "506",
+            "y": "718",
+            "class": "interest"
+},
+
+"Carpentry Shop" :
+            {
+            "pointname": "Carpentry Shop",
+            "building": "Otto Hahn",
+            "floor": "2",
+            "x": "491",
+            "y": "762",
+            "class": "interest"
+},
+
+"Faculty Room 1" :
+            {
+            "pointname": "M.E. Faculty Room",
+            "building": "Otto Hahn",
+            "floor": "2",
+            "x": "467",
+            "y": "773",
+            "class": "interest"
+}
+
+"Facutly Room 2" :
+            {
+            "pointname": "Facutly Room",
+            "building": "Otto Hahn",
+            "floor": "3",
+            "x": "501",
+            "y": "726",
+            "class": "interest"
+},
+
+"Nursing Laboratory Room"
+            {
+            "pointname": "Nursing Laboratory Room",
+            "building": "Otto Hahn",
+            "floor": "3",
+            "x": "543",
+            "y": "638",
+            "class": "interest"    
+}
+
+"Dept. of ECE" :
+            {
+            "pointname": "Dept. of ECE",
+            "building": "Otto Hahn",
+            "floor": "3",
+            "x": "560",
+            "y": "617",
+            "class": "interest"
+},
+
+"Hydraulics Room" :
+            {
+            "pointname": "Hydraulics Room",
+            "building": "Otto Hahn",
+            "floor": "4",
+            "x": "543",
+            "y": "632",
+            "class": "interest"
+},
+
+"Soil Lab" :
+            {
+            "pointname": "Soil Lab",
+            "building": "Otto Hahn",
+            "floor": "4",
+            "x": "557",
+            "y": "662",
+            "class": "interest"
+},
+
+"Factuly Room 3" :
+            {
+            "pointname": "Faculty Room 3",
+            "building": "Otto Hahn",
+            "floor": "4",
+            "x": "554",
+            "y": "612",
+            "class": "interest"
+},
+
+"Factuly Room 4" :
+            {
+            "pointname": "Faculty Room 4",
+            "building": "Otto Hahn",
+            "floor": "4",
+            "x": "460",
+            "y": "768",
+            "class": "interest"
+},
+
+"Dean's Office" :
+            {
+            "pointname": "Dean's Office",
+            "building": "Otto Hahn",
+            "floor": "5",
+            "x": "506",
+            "y": "694",
+            "class":"interest"
+},
+
+"Urban Planning Office" :
+            {
+            "pointname": "Urban Planning Office",
+            "building": "Otto Hahn",
+            "floor": "5",
+            "x": "472",
+            "y": "764",
+            "class":"interest"
+},
+
+"Chem Faculty Room" :
+            {
+            "pointname": "Chem Faculty",
+            "building": "Otto Hahn",
+            "floor": "6",
+            "x": "505",
+            "y": "746",
+            "class":"interest"
+},
+
+"I.E. Faculty Room" :
+            {
+            "pointname": "Faculty Room",
+            "building": "Otto Hahn",
+            "floor": "6",
+            "x": "513",
+            "y": "728",
+            "class":"interest"
+},
+
+"Ladies' Comfort Room: 1f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "1",
+            "x": "568",
+            "y": "626",
+            "class":"interest"
+},
+
+"Ladies' Comfort Room: 2f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "2",
+            "x": "568",
+            "y": "626",
+            "class":"interest"
+},
+
+"Ladies' Comfort Room: 3f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "3",
+            "x": "568",
+            "y": "626",
+            "class":"interest"
+},
+
+"Ladies' Comfort Room: 4f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "4",
+            "x": "568",
+            "y": "626",
+            "class":"interest"
+},
+
+"Ladies' Comfort Room: 5f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "5",
+            "x": "568",
+            "y": "626",
+            "class":"interest"
+},
+
+"Ladies' Comfort Room: 6f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "6",
+            "x": "568",
+            "y": "626",
+            "class":"interest"
+},
+
+"Men's Comfort Room: 1f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "1",
+            "x": "480",
+            "y": "783",
+            "class":"interest"
+},
+
+"Men's Comfort Room: 2f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "2",
+            "x": "480",
+            "y": "783",
+            "class":"interest"
+},
+
+"Men's Comfort Room: 3f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "3",
+            "x": "480",
+            "y": "783",
+            "class":"interest"
+},
+
+"Men's Comfort Room: 4f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "4",
+            "x": "480",
+            "y": "783",
+            "class":"interest"
+},
+
+"Men's Comfort Room: 5f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "5",
+            "x": "480",
+            "y": "783",
+            "class":"interest"
+},
+
+"Men's Comfort Room: 6f" :
+            {
+            "pointname": "Comfort Room",
+            "building": "Otto Hahn",
+            "floor": "6",
+            "x": "480",
+            "y": "783",
+            "class":"interest"
+},
