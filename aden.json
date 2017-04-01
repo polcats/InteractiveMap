@@ -62,6 +62,46 @@
 			"class":"interest"
 }
 
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Female", 
+			"building":"Aden",
+			"floor": "4",
+			"x": "536", 
+			"y": "466",
+			"class":"interest"
+}
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Female", 
+			"building":"Aden",
+			"floor": "5",
+			"x": "536", 
+			"y": "466",
+			"class":"interest"
+}
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Male", 
+			"building":"Aden",
+			"floor": "4",
+			"x": "520", 
+			"y": "506",
+			"class":"interest"
+}
+
+"Comfort Room" : 
+			{ 
+			"pointname":"Comfort Room Male", 
+			"building":"Aden",
+			"floor": "5",
+			"x": "520", 
+			"y": "506",
+			"class":"interest"
+}
+
 "Department" : 
 			{ 
 			"pointname":"Department of Mining Engineering", 
@@ -129,5 +169,45 @@
 			"floor": "2",
 			"x": "429", 
 			"y": "449",
+			"class":"interest"
+}
+
+"Development Program" : 
+			{ 
+			"pointname":"Nursing and Health Development Program", 
+			"building":"Aden",
+			"floor": "4",
+			"x": "440",
+			"y": "412",
+			"class":"interest"
+}
+
+"Office" : 
+			{ 
+			"pointname":"Laboratory Technician Office", 
+			"building":"Aden",
+			"floor": "4",
+			"x": "440",
+			"y": "456",
+			"class":"interest"
+}
+
+"Department" : 
+			{ 
+			"pointname":"Pharmacy Department", 
+			"building":"Aden",
+			"floor": "5",
+			"x": "512",
+			"y": "504",
+			"class":"interest"
+}
+
+"Department" : 
+			{ 
+			"pointname":"Chemistry Department", 
+			"building":"Aden",
+			"floor": "5",
+			"x": "500",
+			"y": "520",
 			"class":"interest"
 }
