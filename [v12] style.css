@@ -1,0 +1,287 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(Quicksand.otf);
+}
+body {
+	background: #222;
+	padding: 0px;
+	margin: 0px;
+	font-size: 62.5%;
+}
+* {
+	font-family: Quicksand;
+}
+
+#bar {
+	background: #fff;
+	opacity: 0.9;
+	width: 100%;
+	height: 1.8rem;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 0.3rem;
+	color: #fff; 
+	z-index: 100000;
+}
+#bar input[type="image"] {
+	margin: 0 0.2rem 0 0.2rem ;
+	padding: 0;
+	max-height: 2.4rem;
+	max-width: 2.4rem;
+}
+#bar input[type="text"] {
+	background: #222;
+	border: none;
+	position: relative;
+	top: -0.5rem;
+	margin: 0 0.2rem 0 0.2rem ;
+	padding: 0;
+	width: 2.5rem;
+	height: 1rem;
+	padding: 0.25rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 2rem;
+	font-size: 0.7rem;
+}
+#options select:disabled {
+	background: #ddd;
+}
+
+
+#map {}
+#mapcontainer {
+	 padding: 0px;
+	 width: 768px;
+	 height: 1024px;
+	 margin: 0 auto;
+}
+circle {
+	cursor: pointer;
+	fill: #fff;
+	r: 4;
+	stroke: #0fb8ad;
+	stroke-width: 2px;
+}
+.currentpoint {
+	fill: yellowgreen;
+	r: 10;
+	stroke: white;
+	stroke-width: 3px;
+	stroke-dasharray: 15;
+	animation: dash 5s linear;
+	animation-iteration-count: infinite;
+	z-index: 100;
+}
+circle.interest {
+	cursor: pointer;
+	fill: #fff;
+	r: 3;
+	stroke: #000;
+	stroke-width: 1px;
+	display: none;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 500;
+  }
+}
+.ground {
+	fill: #222; 
+}
+.Building {
+	fill: #618685;
+	stroke: #fff;
+	stroke-width: 3;
+	cursor: pointer;
+	transition: all ease 1s;
+}
+.Building.selected {
+	fill: #fff;
+	stroke: yellowgreen;
+	stroke-width: 5;
+}
+.pathway {
+	fill: #333;
+}
+.outdoor_stairs {
+	fill: #888;
+}
+.shaded {
+	fill: #3b3a30;
+}
+.darkened {
+	fill: #999;
+}
+.edgestructure {
+	stroke: #444;
+	stroke-width: 1.5px;
+	fill: none;
+}
+.fountain {
+	fill: #ddd; /*6FA8DC*/
+}
+.fountain_grounds {
+	fill: #ddd; /*71C671*/
+}
+
+polyline.buildingpath {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 5;
+	stroke-dasharray: 10;
+	animation-name: path;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  	animation-direction: reverse;
+	transition: all ease 1s;
+}
+polyline.gatepath {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 5;
+	stroke-dasharray: 10;
+	animation-name: path;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  	animation-direction: reverse;
+	transition: all ease 1s;
+}
+
+@keyframes path {
+  to {
+    stroke-dashoffset: 500;
+  }
+}
+
+
+div#options {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 30vw;
+	height: 35vh;
+	margin-left: -15vw;
+	margin-top: -17.5vh;
+	background: #fff;
+	opacity: 0.9;
+	z-index: 1000;
+	text-align: center;
+	color: #000;
+  	box-shadow: 0 0 0 5px #000;
+  	padding: 1rem 0rem 1rem 0rem;
+}
+div#options ul {
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	width: 80%;
+}
+div#options ul li {
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+div#options h3 {
+	font-size: 1.5rem;
+	padding: 0;
+	margin: 0;
+	clear: none;
+	display: inline;
+	width: 30%;
+}
+div#options select {
+	width: 60%;
+	margin: 0.2rem;
+	padding: 0.2rem;
+}
+div#options p {
+  	font-size: 1rem;
+  	padding: 0.5rem;
+  	margin: 0;
+}
+
+div#details {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 40vw;
+	height: 40vh;
+	margin-left: -20vw;
+	margin-top: -20vh;
+	background: #fff;
+	opacity: 1;
+	z-index: 1000;
+	text-align: center;
+	color: #000;
+  	box-shadow: 0 0 0 5px #000;
+}
+input[type="button"] {
+	width: 5rem;
+	height: 1.5rem;
+	background: #000;
+	border: 3px solid #222;
+	color: #fff;
+	transition: all ease 0.5s;
+	font-weight: bold;
+	margin: 0.5rem;
+}
+input[type="button"]:hover {
+	background: #ddd;
+	color: #000;
+}
+div#details h1 {
+	height: 2rem;
+	font-size: 2rem;
+	padding: 0.5rem;
+	margin: 0;
+}
+div#details h2 {
+	height: 1.5rem;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 0.5rem;
+	margin: 0;
+}
+div#details #textcontainer {
+	display: none;
+}
+div#details textarea {
+	background: #222;
+	color: #fff;
+	clear: both;
+	margin: 0 auto;
+	height: 5rem;
+	width: 85%;
+}
+div#details textarea:disabled {
+	background: #000;
+	color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+	div#details {
+		width: 90vw;
+		margin-left: -45vw;
+	}
+	div#options {
+		width: 90vw;
+		margin-left: -45vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	div#details {
+		width: 90vw;
+		margin-left: -45vw;
+	}
+	div#options {
+		width: 90vw;
+		margin-left: -45vw;
+	}
+}
