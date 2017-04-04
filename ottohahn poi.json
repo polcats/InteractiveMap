@@ -1,11 +1,11 @@
 "Boiler Room" : 
-			{ 
-			"pointname":"Boiler Room", 
-            		"building":"Otto Hahn",
-            		"floor": "1",
-			"x": "504", 
-			"y": "754",
-			"class": "interest"
+		{ 
+		"pointname":"Boiler Room", 
+            "building":"Otto Hahn",
+            "floor": "1",
+		"x": "504", 
+		"y": "754",
+		"class": "interest"
 },
 
 
@@ -179,9 +179,9 @@
             "class":"interest"
 },
 
-"Chem Faculty Room" :
+"Faculty Room" :
             {
-            "pointname": "Chem Faculty",
+            "pointname": "Chem Faculty Room",
             "building": "Otto Hahn",
             "floor": "6",
             "x": "505",
@@ -189,9 +189,9 @@
             "class":"interest"
 },
 
-"I.E. Faculty Room" :
+"Faculty Room" :
             {
-            "pointname": "Faculty Room",
+            "pointname": "I.E. Faculty Room",
             "building": "Otto Hahn",
             "floor": "6",
             "x": "513",
@@ -199,121 +199,21 @@
             "class":"interest"
 },
 
-"Ladies' Comfort Room: 1f" :
+"LCR" :
             {
-            "pointname": "Comfort Room",
+            "pointname": "Ladies Comfort Room",
             "building": "Otto Hahn",
-            "floor": "1",
+            "floor": ["1", "2", "3", "4", "5", "6"],
             "x": "568",
             "y": "626",
             "class":"interest"
 },
 
-"Ladies' Comfort Room: 2f" :
+"MCR" :
             {
-            "pointname": "Comfort Room",
+            "pointname": " Men's Comfort Room",
             "building": "Otto Hahn",
-            "floor": "2",
-            "x": "568",
-            "y": "626",
-            "class":"interest"
-},
-
-"Ladies' Comfort Room: 3f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "3",
-            "x": "568",
-            "y": "626",
-            "class":"interest"
-},
-
-"Ladies' Comfort Room: 4f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "4",
-            "x": "568",
-            "y": "626",
-            "class":"interest"
-},
-
-"Ladies' Comfort Room: 5f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "5",
-            "x": "568",
-            "y": "626",
-            "class":"interest"
-},
-
-"Ladies' Comfort Room: 6f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "6",
-            "x": "568",
-            "y": "626",
-            "class":"interest"
-},
-
-"Men's Comfort Room: 1f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "1",
-            "x": "480",
-            "y": "783",
-            "class":"interest"
-},
-
-"Men's Comfort Room: 2f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "2",
-            "x": "480",
-            "y": "783",
-            "class":"interest"
-},
-
-"Men's Comfort Room: 3f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "3",
-            "x": "480",
-            "y": "783",
-            "class":"interest"
-},
-
-"Men's Comfort Room: 4f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "4",
-            "x": "480",
-            "y": "783",
-            "class":"interest"
-},
-
-"Men's Comfort Room: 5f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "5",
-            "x": "480",
-            "y": "783",
-            "class":"interest"
-},
-
-"Men's Comfort Room: 6f" :
-            {
-            "pointname": "Comfort Room",
-            "building": "Otto Hahn",
-            "floor": "6",
+            "floor": ["1", "2", "3", "4", "5", "6"],
             "x": "480",
             "y": "783",
             "class":"interest"
