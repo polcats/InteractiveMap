@@ -1,0 +1,212 @@
+{
+        "pointname": "Ice Plant Room",
+        "building": "Otto Hahn",
+        "floor": "1st",
+        "x": "559",
+        "y": "655",
+        "class": "interest"
+},
+{
+        "pointname": "Foundry Room",
+        "building": "Otto Hahn",
+        "type":"multiple",
+        "floor": [{"floor":"1", "name":"Foundry Room"},
+        		  {"floor":"2", "name":"Mechanical Shop"},
+        		  {"floor":"3", "name":"Electronics Department Laboratory"},
+        		  {"floor":"4", "name":"Soil and Material Laboratory"}],
+        "x": "519",
+        "y": "693",
+        "class": "interest"
+},
+{
+        "pointname": "Materials Testing Laboratory/Electronics Engineering Faculty Room",
+        "building": "Otto Hahn",
+        "type":"multiple",
+        "floor": [{"floor":"1", "name":"Materials Testing Laboratory"},
+        		  {"floor":"3", "name":"Faculty Room - Electronics Engineering"},
+        		  {"floor":"4", "name":"Materials Testing Laboratory Office"}],
+        "x": "505",
+        "y": "721",
+        "class": "interest"
+},
+{
+        "pointname": "Boiler/Drafting Room",
+        "building": "Otto Hahn",
+        "type":"multiple",
+        "floor": [{"floor":"1", "name":"Boiler Room"},
+        		  {"floor":"2", "name":"Drafting Room"}],
+        "x": "492",
+        "y": "748",
+        "class": "interest"
+}
+{
+        "pointname": "Faculty Room and Organization Room Right",
+        "building": "Otto Hahn",
+        "type":"multiple",
+        "floor": [{"floor":"1", "name":"Faculty Room - Civil/Geodetic Engineering"},
+				  {"floor":"2", "name":"Faculty Room - Mechanical Engineering"},
+				  {"floor":"3", "name":"Faculty Room - Electrical Engineering"},
+				  {"floor":"4", "name":"Buttress Office"},
+        		  {"floor":"5", "name":"School of Engineering and Architecture Honor Society"}
+        		  {"floor":"6", "name":"Philippine Institute of Industrial Engineering"},
+        		  {"floor":"7", "name":"United Architects of the Philippine Student Auxilliary"}],
+        "x": "472",
+        "y": "765",
+        "class": "interest"
+},
+{
+        "pointname": "Mechanical and Mechatronice Engineering Department",
+        "building": "Otto Hahn",
+        "floor": "2nd",
+        "x": "509",
+        "y": "732",
+        "class": "interest"
+},
+{
+        "pointname": "Digital Signal Processing Laboratory",
+        "building": "Otto Hahn",
+        "floor": "2nd",
+        "x": "482",
+        "y": "750",
+        "class": "interest"
+},
+{
+        "pointname": "Electrical Engineering Laboratory Office",
+        "building": "Otto Hahn",
+        "floor": "2nd",
+        "x": "540",
+        "y": "649",
+        "class": "interest"
+},
+{
+        "pointname": "Faculty Room and Organization Room",
+        "building": "Otto Hahn",
+        "type":"multiple",
+        "floor": [{"floor":"1", "name":"Mechanical Engineering Office"},
+        		  {"floor":"2", "name":"Faculty Room - Mechanical Engineering"}
+        		  {"floor":"3", "name":"Faculty Room - Electronics Engineering"},
+        		  {"floor":"4", "name":"Philippine Institute of Civil Engineering"}],
+        "x": "561",
+        "y": "616",
+        "class": "interest"
+},
+{
+        "pointname": "Hydraulics Room",
+        "building": "Otto Hahn",
+        "floor": "4th",
+        "x": "541",
+        "y": "633",
+        "class": "interest"
+},
+{
+        "pointname": "Faculty Room - Civil Engineering",
+        "building": "Otto Hahn",
+        "floor": "4th",
+        "x": "554",
+        "y": "607",
+        "class": "interest"
+},
+{
+        "pointname": "Faculty Room - Civil Engineering",
+        "building": "Otto Hahn",
+        "floor": "4th",
+        "x": "457",
+        "y": "765",
+        "class": "interest"
+},
+{
+        "pointname": "Research and Development Room",
+        "building": "Otto Hahn",
+        "floor": "5th",
+        "x": "531",
+        "y": "643",
+        "class": "interest"
+},
+{
+        "pointname": "Computer Application Department",
+        "building": "Otto Hahn",
+        "floor": "5th",
+        "x": "457",
+        "y": "765",
+        "class": "interest"
+},
+{
+        "pointname": "Dean's Office - SEA",
+        "building": "Otto Hahn",
+        "floor": "5th",
+        "x": "502",
+        "y": "692",
+        "class": "interest"
+},
+{
+        "pointname": "Engineering Urban Planning Research Laboratory",
+        "building": "Otto Hahn",
+        "floor": "5th",
+        "x": "467",
+        "y": "747",
+        "class": "interest"
+},
+{
+        "pointname": "Audio Visual Room",
+        "building": "Otto Hahn",
+        "floor": "5th",
+        "x": "481",
+        "y": "721",
+        "class": "interest"
+},
+{
+        "pointname": "Faculty Room - Industrial Engineering",
+        "building": "Otto Hahn",
+        "floor": "6th",
+        "x": "513",
+        "y": "728",
+        "class":"interest"
+},
+{
+        "pointname": "Methods of Ergonomics Laboratory - Industrial Engineering",
+        "building": "Otto Hahn",
+        "floor": "6th",
+        "x": "500",
+        "y": "746",
+        "class":"interest"
+},
+{
+        "pointname": "Faculty Room - Architecture",
+        "building": "Otto Hahn",
+        "floor": "7th",
+        "x": "492",
+        "y": "712",
+        "class":"interest"
+},
+{
+        "pointname": "Architecture Department",
+        "building": "Otto Hahn",
+        "floor": "7th",
+        "x": "513",
+        "y": "677",
+        "class":"interest"
+},
+{
+        "pointname": "Faculty Room - Architecture",
+        "building": "Otto Hahn",
+        "floor": "8th",
+        "x": "563",
+        "y": "623",
+        "class":"interest"
+},
+{
+        "pointname": " Male's Comfort Room",
+        "building": "Otto Hahn",
+        "floor": ["1st", "2nd", "3rd", "4th", "5th", "6th"],
+        "x": "485",
+        "y": "780",
+        "class":"interest CR"
+},
+{
+        "pointname": "Female's Comfort Room",
+        "building": "Otto Hahn",
+        "floor": ["1st", "2nd", "3rd", "4th", "5th", "6th"],
+        "x": "572",
+        "y": "623",
+        "class":"interest CR"
+},
