@@ -1,0 +1,141 @@
+{
+   "Points":[
+
+   {
+      "location":"Building2",
+      "name":"[B2] BottomLeft",
+      "x":"121",
+      "y":"346",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"Building2",
+      "name":"[B2] BottomRight",
+      "x":"251",
+      "y":"317",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"Building2",
+      "name":"[B2] TopRight",
+      "x":"292",
+      "y":"99",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"Building2",
+      "name":"[B2] TopLeft",
+      "x":"94",
+      "y":"110",
+      "class":"exit",
+      "floor":"2"
+   },
+
+   {
+      "location":"T_Building",
+      "name":"[TB] TopStair",
+      "x":"573",
+      "y":"297",
+      "class":"exit",
+      "floor":"2"
+   },
+
+   {
+      "location":"T_Building",
+      "name":"[TB] BottomStair",
+      "x":"574",
+      "y":"453",
+      "class":"exit",
+      "floor":"2"
+   },
+
+   {
+      "location":"T_Building",
+      "name":"[TB] Bottom",
+      "x":"538",
+      "y":"578",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"T_Building",
+      "name":"[TB] Middle",
+      "x":"719",
+      "y":"367",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"L_Building",
+      "name":"[LB] Top",
+      "x":"124",
+      "y":"412",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"L_Building",
+      "name":"[LB] Bottom",
+      "x":"341",
+      "y":"671",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"Rectangle_Building",
+      "name":"[RB] Left",
+      "x":"656",
+      "y":"668",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"Building1",
+      "name":"[B1] Bottom",
+      "x":"756",
+      "y":"185",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"Building1",
+      "name":"[B1] Top",
+      "x":"657",
+      "y":"77",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"Campus",
+      "name":"[Gate] BottomGate",
+      "x":"535",
+      "y":"722",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+   {
+      "location":"Campus",
+      "name":"[Gate] RightGate",
+      "x":"975",
+      "y":"363",
+      "class":"exit",
+      "floor":"Ground"
+   },
+
+
+   ]
+}

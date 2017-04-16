@@ -1,0 +1,133 @@
+{
+
+	"Gates":[
+				{"keyword":"RightGate", "display":"Right Gate"},
+				{"keyword":"BottomGate", "display":"Boottom Gate"}
+			],
+	"Paths": [
+
+			{
+				"pair":"Building2 L_Building",
+				"points":"121 346, 124 412",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Building2 T_Building",
+				"points":"292 99, 311 130, 307 180, 305 230, 415 211, 413 155, 590 158, 585 276, 635 280, 633 296, 573 297",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Building2 Building1",
+				"points":"292 99, 311 130, 307 180, 305 230, 415 211, 413 155, 590 158,657 77",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Building2 Rectangle_Building",
+				"points":"121 346, 116 380, 377 373, 380 667, 522 671, 656 668",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Building2 BottomGate",
+				"points":"121 346, 116 380, 377 373, 380 667, 522 671, 535 722",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Building2 RightGate",
+				"points":"292 99, 311 130, 307 180, 305 230, 415 211, 413 155, 590 158, 727 169, 741 368, 975 363",
+				"type":"primary"
+			},
+
+			{
+				"pair":"L_Building Rectangle_Building",
+				"points":"341 671, 656 668",
+				"type":"primary"
+			},
+
+			
+
+			{
+				"pair":"L_Building BottomGate",
+				"points":"341 671, 522 671, 535 722",
+				"type":"primary"
+			},
+
+			{
+				"pair":"L_Building T_Building",
+				"points":"341 671, 522 671,538 578",
+				"type":"primary"
+			},
+
+			{
+				"pair":"L_Building Building1",
+				"points":"124 412, 123 378, 366 367, 390 130, 657 77",
+				"type":"primary"
+			},
+
+			{
+				"pair":"L_Building RightGate",
+				"points":"124 412, 123 378, 366 367, 390 130,626 132, 617 267, 775 270, 776 366, 975 363",
+				"type":"primary"
+			},
+
+			{
+				"pair":"T_Building Building1",
+				"points":"573 297, 655 296, 756 185",
+				"type":"primary"
+			},
+
+			{
+				"pair":"T_Building Rectangle_Building",
+				"points":"538 578, 546 662, 656 668",
+				"type":"primary"
+			},
+
+			{
+				"pair":"T_Building BottomGate",
+				"points":"538 578, 535 722",
+				"type":"primary"
+			},
+
+			{
+				"pair":"T_Building RightGate",
+				"points":"719 367, 975 363",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Building1  Rectangle_Building",
+				"points":"756 185, 738 206, 748 558, 638 555, 635 666, 656 668",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Building1 RightGate",
+				"points":"756 185, 738 206, 741 362, 975 363",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Building1 BottomGate",
+				"points":"756 185, 738 206, 741 362, 742 558, 632 561, 633 673, 548 677,535 722",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Rectangle_Building BottomGate",
+				"points":"656 668,548 677,535 722",
+				"type":"primary"
+			},
+
+			{
+				"pair":"Rectangle_Building RightGate",
+				"points":"656 668, 615 667, 618 495, 751 482, 746 370, 975 363",
+				"type":"primary"
+			},
+
+						
+	]
+}

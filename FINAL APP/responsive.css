@@ -1,0 +1,286 @@
+/*
+CSS3 Validation Result: No errors
+*/
+
+@media screen and (min-device-width: 320px) and (min-device-height: 568px) { /*portrait for iphone 5*/
+	div#details {
+		width: 90vw;
+		margin-left: -45vw;
+		height: 80vh;
+		margin-top: -40vh;
+	}
+	div#details.point {
+		height: 45vh;
+		margin-top: -22.5vh;
+	}
+	div#details #textcontainer {
+		height: 80%;
+	}
+	div#details textarea.desc {
+		height: 30%;
+	}
+	div#details textarea.note {
+		height: 50%;
+	}
+	div#details #content {
+		height: 70%;
+	}
+	div#details h3 {
+		font-size: 1.4rem;
+		font-weight: bold;
+		padding: 0.2rem;
+	}
+	div#options {
+		width: 90vw;
+		margin-left: -45vw;
+		height: 45vh;
+		margin-top: -22.5vh;
+	}
+}
+
+@media screen and (min-device-width: 568px) and (min-device-height: 320px) { /*landscape for iphone 5*/
+	#setup img#logo{
+		height: 50vh;
+		width: auto;
+	}
+	div#details {
+		width: 50vw;
+		margin-left: -25vw;
+		height: 80vh;
+		margin-top: -35vh;
+	}
+	div#details.point {
+		height: 75vh;
+		margin-top: -35vh;
+		width: 50vw;
+		margin-left: -25vw;
+	}
+	div#details #textcontainer {
+		height: 70%;
+	}
+	div#details textarea.desc {
+		height: 35%;
+	}
+	div#details textarea.note {
+		height: 25%;
+	}
+	div#details #content {
+		height: 70%;
+	}
+	div#details h3 {
+		font-size: 1.4rem;
+		font-weight: bold;
+		padding: 0.2rem;
+	}
+	div#options {
+		width: 50vw;
+		margin-left: -25vw;
+		height: 80vh;
+		margin-top: -36vh;
+	}
+}
+
+
+@media screen and (min-device-width: 360px) and (min-device-height: 640px) { /*portrait for Galaxy s5, Nexus 5x, and iPhone6*/
+	div#details {
+		height: 75vh;
+		margin-top: -37.5vh;
+	}
+
+	div#options {
+		width: 85vw;
+		margin-left: -42.5vw;
+		height: 38vh;
+		margin-top: -19vh;
+	}
+}
+
+@media screen and (min-device-width: 640px) and (min-device-height: 360px) { /*landscape for Galaxy s5, Nexus 5x, and iPhone6*/
+	div#details {
+		height: 80vh;
+		margin-top: -36vh;
+	}
+	div#options {
+		width: 40vw;
+		margin-left: -25vw;
+		height: 70vh;
+		margin-top: -35vh;
+	}
+}
+
+
+@media screen and (min-device-width: 412px) and (min-device-height: 732px) { /*portrait for Nexus 6P*/
+	div#details {
+		height: 70vh;
+		margin-top: -37.5vh;
+	}
+	div#details.point {
+		height: 35vh;
+		margin-top: -17.5vh;
+	}
+	div#options {
+		width: 75vw;
+		margin-left: -37.5vw;
+		height: 36vh;
+		margin-top: -18vh;
+	}
+}
+
+
+@media screen and (min-device-width: 414px) and (min-device-height: 736px) { /*iPhone6s+ Portrait*/
+	div#details {
+		height: 70vh;
+		margin-top: -35vh;
+	}
+	div#options {
+		width: 75vw;
+		margin-left: -37.5vw;
+		height: 33vh;
+		margin-top: -17.5vh;
+	}
+}
+
+
+@media screen and (min-device-width: 736px) and (min-device-height: 414px) { /*landscape for iPhone6s+*/
+	div#details {
+		height: 70vh;
+		margin-top: -35vh;
+	}
+	div#options {
+		width: 38vw;
+		margin-left: -19vw;
+		height: 60vh;
+		margin-top: -30vh;
+	}
+}
+
+
+@media screen and (min-device-width: 768px) and (min-device-height: 1024px) { /*portrait for iPad*/
+	div#details {
+		height: 30vh;
+		margin-top: -20vh;
+	}
+	div#details.point {
+		height: 25vh;
+		margin-top: -12.5vh;
+		width: 25vw;
+		margin-left: -12.5vw;
+	}
+	div#options {
+		width: 40vw;
+		margin-left: -20vw;
+		height: 23vh;
+		margin-top: -12.5vh;
+	}
+}
+
+
+
+@media screen and (min-device-width: 1024px) and (min-device-height: 768px) { /*landscape for iPad and smaller laptops*/
+	div#details {
+		height: 40vh;
+		margin-top: -20vh;
+	}
+	div#details.point {
+		height: 30vh;
+		margin-top: -15vh;
+		width: 35vw;
+		margin-left: -17.5vw;
+	}
+	div#options {
+		width: 30vw;
+		margin-left: -15vw;
+		height: 33vh;
+		margin-top: -15vh;
+	}
+}
+
+@media screen and (min-device-width: 1280px) and (min-device-height: 600px) { /*landscape for laptops */
+	div#details {
+		height: 40vh;
+		width: 35vw;
+		margin-left: -17.5vw;
+		margin-top: -20vh;
+	}
+	div#details.point {
+		height: 35vh;
+		margin-top: -17.5vh;
+		width: 25vw;
+		margin-left: -12.5vw;
+	}
+	div#options {
+		width: 20vw;
+		margin-left: -10vw;
+		height: 38vh;
+		margin-top: -19vh;
+	}
+}
+
+@media screen and (min-device-width: 1024px) and (min-device-height: 1366px) { /*portrait for iPad Pro*/
+	div#details {
+		height: 20vh;
+		margin-top: -10vh;
+	}
+	div#options {
+		width: 25vw;
+		margin-left: -12.5vw;
+		height: 18vh;
+		margin-top: -9vh;
+	}
+}
+
+@media screen and (min-device-width: 1366px) and (min-device-height: 1024px)  { /*landscape for iPad Pro*/
+	div#details {
+		height: 30vh;
+		width: 40vw;
+		margin-left: -20vw;
+		margin-top: -15vh;
+	}
+	div#options {
+		width: 18vw;
+		margin-left: -9vw;
+		height: 25vh;
+		margin-top: -12.5vh;
+	}
+}
+
+
+/* Laptops and others */
+/*@media (min-device-width: 900px) and (min-device-height: 400px) { 
+
+
+	div#details h1 {
+		font-size: 1.2rem;
+		padding: 0.1rem;
+	}
+	div#details {
+		width: 35vw;
+		margin-left: -17.5vw;
+		height: 50vh;
+		max-height: 200px;
+		margin-top: -25vh;
+	}
+	div#details p.list {
+		font-size: 1.1rem;
+	}
+	div#details textarea {
+		height: 50%;
+	}
+	div#details input[type="button"] {
+		height: 1.5rem;
+		margin: 0.3rem;
+		font-size: 0.9rem;
+	}
+	div#options h3 {
+		font-size: 1.5rem;
+	}
+	div#options p {
+		font-size: 1rem;
+	}
+	div#options {
+		width: 30vw;
+		margin-left: -15vw;
+		height: 40vh;
+		margin-top: -20vh;
+	}
+}*/

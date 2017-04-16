@@ -1,0 +1,214 @@
+{
+
+	"BuildingFilters":[ // keywords = the values for the "building" attributes in the "Points" array
+		{"keyword":"", "display":"No Filter"},
+		{"keyword":"Building1", "display":"Building 1"},
+		{"keyword":"Building2", "display":"Building 2"},
+		{"keyword":"T_Building", "display":"T Building"},
+		{"keyword":"L_Building", "display":"L Building"},
+		{"keyword":"Rectangle_Building", "display":"Rectangle Building"}
+	],
+
+	"FloorFilters":[ // keywords = the values for the "floor" attributes in the "Points" array
+		{"keyword":"", "display":"No Filter"}, 
+		{"keyword":"1st", "display":"1st Floor"},
+		{"keyword":"2nd", "display":"2nd Floor"},
+	],
+
+	"RoomFilters": [
+		{"keyword":"", "display":"No Filter"}, 
+		{"keyword":"CF", "display":"Conference Room"}, 
+		{"keyword":"CR", "display":"Comfort Rooms"}, 
+		{"keyword":"Canteen", "display":"Canteen"}	
+	],
+
+
+	"Points":[
+
+{ 
+		"pointname":"Canteen", 
+		"building":"Building2",
+		"floor": "1st",
+		"x": "240", 
+		"y": "291",
+		"class":"Canteen"
+},
+
+{ 
+		"pointname":"Canteen", 
+		"building":"Building2",
+		"floor": "1st",
+		"x": "711", 
+		"y": "606",
+		"class":"Canteen"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"Building2",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "76", 
+		"y": "156",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"Building2",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "77", 
+		"y": "308",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"L_Building",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "86", 
+		"y": "435",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"L_Building",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "306", 
+		"y": "696",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"Rectangle_Building",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "680", 
+		"y": "707",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"Rectangle_Building",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "930", 
+		"y": "591",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"T_Building",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "450", 
+		"y": "552",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"T_Building",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "455", 
+		"y": "196",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"Building1",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "957", 
+		"y": "53",
+		"class":"CR"
+},
+
+{
+		"pointname":"Comfort Room", 
+		"building":"Building1",
+		"type":"multiple_similar",
+		"floor": [
+				{"floor":"1st","name":"Female's Comfort Room"},
+				{"floor":"2nd","name":"Female's Comfort Room"}],
+		"x": "956", 
+		"y": "208",
+		"class":"CR"
+},
+
+{ 
+		"pointname":"Conference Room", 
+		"building":"Building2",
+		"floor": "1st",
+		"x": "137", 
+		"y": "220",
+		"class":"CF"
+},
+
+{ 
+		"pointname":"Conference Room", 
+		"building":"Building1",
+		"floor": "1st",
+		"x": "885", 
+		"y": "162",
+		"class":"CF"
+},
+
+{ 
+		"pointname":"Conference Room", 
+		"building":"T_Building",
+		"floor": "1st",
+		"x": "505", 
+		"y": "378",
+		"class":"CF"
+},
+
+{ 
+		"pointname":"Conference Room", 
+		"building":"L_Building",
+		"floor": "1st",
+		"x": "130", 
+		"y": "665",
+		"class":"CF"
+},
+
+{ 
+		"pointname":"Conference Room", 
+		"building":"L_Building",
+		"floor": "1st",
+		"x": "808", 
+		"y": "661",
+		"class":"CF"
+}
+
+
+]
+
+}
