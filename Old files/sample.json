@@ -1,0 +1,87 @@
+{
+	"Structures": {
+		"Building1" : 
+			{ 
+			"name":"Otcefrep", 
+			"x": "210", 
+			"y": "140",
+			"stroke":"green",
+			"stkwid":"3",
+			"fill":"white",
+			"r":"10"
+		},
+		"Building2_p1" : 
+			{ 
+			"name":"Gnalis", 
+			"x": "400", 
+			"y": "140",
+			"stroke":"green",
+			"stkwid":"3",
+			"fill":"white",
+			"r":"10"
+		},
+		"Building2_p2" : 
+			{ 
+			"name":"Gnalis", 
+			"x": "550", 
+			"y": "140",
+			"stroke":"green",
+			"stkwid":"3",
+			"fill":"white",
+			"r":"10"
+		},
+		"Building3" : 
+			{ 
+			"name":"Building3", 
+			"x": "195", 
+			"y": "430",
+			"stroke":"green",
+			"stkwid":"3",
+			"fill":"white",
+			"r":"10"
+		},
+		"Building4" : 
+			{ 
+			"name":"Building4", 
+			"x": "345", 
+			"y": "500",
+			"stroke":"green",
+			"stkwid":"3",
+			"fill":"white",
+			"r":"10"
+		},
+		"Building5" : 
+			{ 
+			"name":"Building5", 
+			"x": "445", 
+			"y": "500",
+			"stroke":"green",
+			"stkwid":"3",
+			"fill":"white",
+			"r":"10"
+		},
+		"Fountain" : 
+			{ 
+			"name":"Niatnouf", 
+			"x": "275", 
+			"y": "300",
+			"stroke":"green",
+			"stkwid":"3",
+			"fill":"white",
+			"r":"10"
+		},
+	},
+
+	"Landmarks": {
+		"Point1" : {
+			"name":"Tniop1", 
+			"x": "120", 
+			"y": "280",
+			"stroke":"red",
+			"stkwid":"3",
+			"fill":"black",
+			"r":"10"
+		}
+	}
+
+}

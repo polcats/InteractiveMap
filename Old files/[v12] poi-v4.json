@@ -1,0 +1,411 @@
+{
+	"Points":[
+
+			{ 
+			"pointname":"SLU Band Room", 
+			"building":"Perfecto",
+			"floor":"1",
+			"x": "345", 
+			"y": "230",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Philosophy Faculty Room", 
+			"building":"Perfecto",
+			"floor":"1",
+			"x": "418", 
+			"y": "257",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"STELA Conference Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "381", 
+			"y": "232",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"STELA GPCS' Office", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "374", 
+			"y": "262",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"General Education Faculty Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "398", 
+			"y": "247",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"Professional Education Dept Faculty Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "415", 
+			"y": "258",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"Supervising Instructors Faculty Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "434", 
+			"y": "270",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"STELA Dean's Office", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "422", 
+			"y": "291",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"STELA URGCS' Office", 
+			"building":"Perfecto",
+			"floor":"4",
+			"x": "362", 
+			"y": "250",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"STELA SSC KASAMA Office", 
+			"building":"Perfecto",
+			"floor":"5",
+			"x": "345", 
+			"y": "230",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"STE Computer Room", 
+			"building":"Perfecto",
+			"floor":"5",
+			"x": "385", 
+			"y": "642",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"Political Science Faculty Room", 
+			"building":"Perfecto",
+			"floor":"5",
+			"x": "415", 
+			"y": "258",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"Philosophy, DPSS / Legal Studies & Theology Dept. Heads Office", 
+			"building":"Perfecto",
+			"floor":"6",
+			"x": "415", 
+			"y": "258",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"Psychology Dept. Head's Office and Faculty Room", 
+			"building":"Perfecto",
+			"floor":"6",
+			"x": "381", 
+			"y": "232",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"SCIS SSC KASAMA Office", 
+			"building":"Perfecto",
+			"floor":"6",
+			"x": "345", 
+			"y": "230",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"AudioVisualRoom", 
+			"building":"Perfecto",
+			"floor":"7",
+			"x": "346", 
+			"y": "242",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Perfecto",
+			"floor":"1,2,3,4,5,6,7",
+			"x": "461", 
+			"y": "321",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Perfecto",
+			"floor":"1,2,3,4,5,6,7",
+			"x": "456", 
+			"y": "315",
+			"class":"interest"
+},
+
+			{ 
+			"pointname":"Comfort Room Male", 
+			"building":"Aden",
+			"floor": "1,2,3",
+			"x": "520", 
+			"y": "506",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Comfort Room Female", 
+			"building":"Aden",
+			"floor": "1,2,3",
+			"x": "536", 
+			"y": "466",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Department of Mining Engineering", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "536", 
+			"y": "524",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Department of Chemical Engineering", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "416", 
+			"y": "446",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Chemical Engineering Faculty Room", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "428", 
+			"y": "440",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Chemistry Lab Office", 
+			"building":"Aden",
+			"floor": "3",
+			"x": "564", 
+			"y": "472",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Laboratory Technician Office", 
+			"building":"Aden",
+			"floor": "1",
+			"x": "436", 
+			"y": "448",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Equipment & Work Room", 
+			"building":"Aden",
+			"floor": "1",
+			"x": "564", 
+			"y": "473",
+			"class":"interest"
+},
+			{ 
+			"pointname":"Physics Faculty Room", 
+			"building":"Aden",
+			"floor": "2",
+			"x": "429", 
+			"y": "449",
+			"class":"interest"
+}
+,{ 
+			"pointname": "ConferenceRoom" , 
+			"building": "Silang",
+			"x": "271", 
+			"y": "254",
+			"floor": "3",
+			"class": "interest",
+		},
+		{ 
+			"pointname": "ICTR", 
+			"building": "Silang",
+			"floor": "3",
+			"x": "324", 
+			"y": "299",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "SAO", 
+			"building": "Silang",
+			"floor": "3",
+			"x": "256", 
+			"y": "308",
+			"class": "interest"
+			
+		},
+		{ 
+			"pointname": "IT/CS_Faculty",
+			"building": "Silang",
+			"floor": "3", 
+			"x": "339", 
+			"y": "206",
+			"class": "interest"
+			
+		},
+		{ 
+			"pointname": "CAD_Faculty", 
+			"building": "Silang",
+			"floor": "3", 
+			"x": "354", 
+			"y": "316",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Math_Faculty", 
+			"building": "Silang",
+			"floor": "3", 
+			"x": "365", 
+			"y": "323",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Dean_Office", 
+			"building": "Silang",
+			"floor": "3", 
+			"x": "337", 
+			"y": "347",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Registrar", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "272", 
+			"y": "358",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Accounting", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "368", 
+			"y": "349",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Canteen", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "389", 
+			"y": "360",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Aden_Tunnel", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "420", 
+			"y": "375",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "ATM Machine", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "284", 
+			"y": "339",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Security", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "291", 
+			"y": "318",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Post_office", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "332", 
+			"y": "341",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Clinic", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "345", 
+			"y": "312",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "Dental_Clinic", 
+			"building": "Silang",
+			"floor": "2", 
+			"x": "366", 
+			"y": "325",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "SON_Faculty", 
+			"building": "Silang",
+			"floor": "5", 
+			"x": "259", 
+			"y": "315",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "LadiesCRSCIS", 
+			"building": "Silang",
+			"floor": "3,5",
+			"x": "381", 
+			"y": "370",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "LadiesCRSON",
+			"building": "Silang",
+			"floor": "1,3,5", 
+			"x": "186", 
+			"y": "451",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "MensCRSCIS", 
+			"building": "Silang",
+			"floor": "2,4",
+			"x": "381", 
+			"y": "370",
+			"class": "interest"
+		},
+		{ 
+			"pointname": "MensCRSON", 
+			"building": "Silang",
+			"floor": "2,4",
+			"x": "186", 
+			"y": "451",
+			"class": "interest"
+		}
+
+
+]
+
+}

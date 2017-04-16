@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>InfoMap</title>
+	<meta id="view" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<script src="mapdata.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	var showpathsactive = true;
+	var showdetailsactive = false;
+	var showBuildingPathsActive = false;
+	function switchactive(num) {
+		var select = document.getElementById("active");
+		var status = select.options[select.selectedIndex].value;
+		document.getElementById("gates").setAttribute("disabled", "disabled");
+		if(status == "0") {
+			showpathsactive = true;
+			showdetailsactive = false;
+			showBuildingPathsActive = false;
+		} else if(status == "1") {
+			showpathsactive = false;
+			showdetailsactive = false;
+			showBuildingPathsActive = true;
+			document.getElementById("gates").removeAttribute("disabled");
+		} else if(status == "2") {
+			showpathsactive = false;
+			showdetailsactive = true;
+			showBuildingPathsActive = false;
+		}
+	}
+
+	function changeGate() {
+		var select = document.getElementById("gates");
+		gate = select.options[select.selectedIndex].value;
+	}
+
+    function showSettings() {
+    	document.getElementById("options").setAttribute("style","display: block;");
+    }
+
+    var currentZoom = 100;
+    function magnify(action) {
+    	var zoomLevelText = document.getElementById("zoom");
+
+
+    	if(action && currentZoom < 300) {
+    		currentZoom += 25;
+    		zoomLevelText.value = currentZoom + "%";
+    		document.getElementById("map").setAttribute("style", "zoom: "+currentZoom/100+";");
+    	} else if(!action && currentZoom > 100){
+    		currentZoom -= 25
+    		zoomLevelText.value = currentZoom + "%";
+    		document.getElementById("map").setAttribute("style", "zoom: "+currentZoom/100+";");
+    	}
+
+    	if(currentZoom >= 200) {
+    		var points = document.getElementsByClassName("interest");
+    		for(g = 0; g < points.length; g++) {
+    			points[g].style.display = "block";
+    		}
+    	} else {
+    		var points = document.getElementsByClassName("interest");
+    		for(g = 0; g < points.length; g++) {
+    			points[g].style.display = "none";
+    		}
+    	}
+
+    }
+	</script>
+	<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+
+<div id="bar">
+
+<input type="image" src="settings.png" title="settings" onclick="showSettings();" />
+<input type="image" src="minus.png" title="zoom out" onclick="magnify(false);" />
+<input type="image" src="plus.png" title="zoom in" onclick="magnify(true);" />
+<input id="zoom" type="text" value="100%" />
+</div>
+
+<div id="options">
+	<form id="activeform">
+
+
+	<h3>Mode</h3>
+	<select name="active" id="active" onchange="switchactive();"> 
+		<option value="0">Building-to-Building Paths </option>
+		<option value="1">Gate-to-Building Paths</option>
+		<option value="2">Building Details </option>
+	</select>
+	<p>What do you want to see when you click buildings?</p>
+
+	<h3>Gate</h3>
+	<select name="gates" id="gates" onchange="changeGate();" disabled> 
+		<option value="MainGate">Main Gate</option>
+		<option value="Gate4">Gate 4</option>
+		<option value="Gate5">Gate 5</option>
+		<option value="Gate6">Gate 6</option>
+	</select>
+	<p>Choose a gate to use it as a starting point.</p>
+
+
+	<input type="button" value="Close" onclick="this.parentNode.parentNode.removeAttribute('style');" />
+	</form>
+</div>
+
+
+<div id="mapcontainer">
+<svg id="map">
+	<style> 
+	circle {
+		cursor: hand;
+	}
+	</style>
+</svg>
+</div>
+
+<div id="details">
+	<h1 id="head"></h1>
+	<h2 id="content"></h2>
+	<div id="textcontainer">
+	<textarea id="text" disabled></textarea>
+	<input type="button" value="Edit" onclick="notes(0); this.parentNode.childNodes[1].removeAttribute('disabled');" />
+	<input type="button" value="Save" onclick="notes(1); this.parentNode.childNodes[1].setAttribute('disabled', 'disabled');" />
+	</div>
+	<input type="button" value="Close" id="dismiss" onclick="this.parentNode.removeAttribute('style');" />
+</div>
+
+<script type="text/javascript" defer>
+	setMainSVG("768", "1205", "map", "mapcontainer");
+	generateStructures(data["Structures"]);
+	generateEntries(entrydata["Points"]);
+	generatePointsOfInterests(poisdata["Points"]);
+</script>
+</body>
+</html>

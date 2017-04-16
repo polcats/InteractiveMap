@@ -1,0 +1,270 @@
+"SLUBandRoom" : 
+			{ 
+			"pointname":"SLU Band Room", 
+			"building":"Perfecto",
+			"floor":"1",
+			"x": "345", 
+			"y": "230",
+			"class":"interest"
+},
+"PhilosophyFR" : 
+			{ 
+			"pointname":"Philosophy Faculty Room", 
+			"building":"Perfecto",
+			"floor":"1",
+			"x": "418", 
+			"y": "257",
+			"class":"interest"
+},
+"ConferenceRoom" : 
+			{ 
+			"pointname":"STELA Conference Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "381", 
+			"y": "232",
+			"class":"interest"
+},
+"GPCS'Office" : 
+			{ 
+			"pointname":"STELA GPCS' Office", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "374", 
+			"y": "262",
+			"class":"interest"
+},
+"GenEdFR" : 
+			{ 
+			"pointname":"General Education Faculty Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "398", 
+			"y": "247",
+			"class":"interest"
+},
+"ProfessionalEducDeptFR" : 
+			{ 
+			"pointname":"Professional Education Dept Faculty Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "415", 
+			"y": "258",
+			"class":"interest"
+},
+"SupervisingInstructorsFR" : 
+			{ 
+			"pointname":"Supervising Instructors Faculty Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "434", 
+			"y": "270",
+			"class":"interest"
+},
+"STELADO" : 
+			{ 
+			"pointname":"STELA Dean's Office", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "422", 
+			"y": "291",
+			"class":"interest"
+},
+"URGCSOffice" : 
+			{ 
+			"pointname":"STELA URGCS' Office", 
+			"building":"Perfecto",
+			"floor":"4",
+			"x": "362", 
+			"y": "250",
+			"class":"interest"
+},
+"STELASSCKASAMA" : 
+			{ 
+			"pointname":"STELA SSC KASAMA Office", 
+			"building":"Perfecto",
+			"floor":"5",
+			"x": "345", 
+			"y": "230",
+			"class":"interest"
+},
+"STECompRoom" : 
+			{ 
+			"pointname":"STE Computer Room", 
+			"building":"Perfecto",
+			"floor":"5",
+			"x": "385", 
+			"y": "642",
+			"class":"interest"
+},
+"PolSciFR" : 
+			{ 
+			"pointname":"Political Science Faculty Room", 
+			"building":"Perfecto",
+			"floor":"5",
+			"x": "415", 
+			"y": "258",
+			"class":"interest"
+},
+"PhiloHeadsOffice" : 
+			{ 
+			"pointname":"Philosophy, DPSS / Legal Studies & Theology Dept. Heads Office", 
+			"building":"Perfecto",
+			"floor":"6",
+			"x": "415", 
+			"y": "258",
+			"class":"interest"
+},
+"PsychFR" : 
+			{ 
+			"pointname":"Psychology Dept. Head's Office and Faculty Room", 
+			"building":"Perfecto",
+			"floor":"6",
+			"x": "381", 
+			"y": "232",
+			"class":"interest"
+},
+"SCISSSCKASAMA" : 
+			{ 
+			"pointname":"SCIS SSC KASAMA Office", 
+			"building":"Perfecto",
+			"floor":"6",
+			"x": "345", 
+			"y": "230",
+			"class":"interest"
+},
+"AVR" : 
+			{ 
+			"pointname":"AudioVisualRoom", 
+			"building":"Perfecto",
+			"floor":"7",
+			"x": "346", 
+			"y": "242",
+			"class":"interest"
+},
+"LadiesCR 1F" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Perfecto",
+			"floor":"1",
+			"x": "461", 
+			"y": "321",
+			"class":"interest"
+},
+"MensCR 1F" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Perfecto",
+			"floor":"1",
+			"x": "456", 
+			"y": "315",
+			"class":"interest"
+},
+"LadiesCR 2F" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Perfecto",
+			"floor":"2",
+			"x": "461", 
+			"y": "321",
+			"class":"interest"
+},
+"MensCR 2F" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Perfecto",
+			"floor":"2",
+			"x": "456", 
+			"y": "315",
+			"class":"interest"
+},
+"LadiesCR 3F" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "461", 
+			"y": "321",
+			"class":"interest"
+},
+"MensCR 3F" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Perfecto",
+			"floor":"3",
+			"x": "456", 
+			"y": "315",
+			"class":"interest"
+},
+"LadiesCR 4F" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Perfecto",
+			"floor":"4",
+			"x": "461", 
+			"y": "321",
+			"class":"interest"
+},
+"MensCR 4F" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Perfecto",
+			"floor":"4",
+			"x": "456", 
+			"y": "315",
+			"class":"interest"
+},
+"LadiesCR 5F" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Perfecto",
+			"floor":"5",
+			"x": "461", 
+			"y": "321",
+			"class":"interest"
+},
+"MensCR 5F" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Perfecto",
+			"floor":"5",
+			"x": "456", 
+			"y": "315",
+			"class":"interest"
+},
+"LadiesCR 6F" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Perfecto",
+			"floor":"6",
+			"x": "461", 
+			"y": "321",
+			"class":"interest"
+},
+"MensCR 6F" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Perfecto",
+			"floor":"6",
+			"x": "456", 
+			"y": "315",
+			"class":"interest"
+},
+"LadiesCR 7F" : 
+			{ 
+			"pointname":"Ladies' Comfort Room", 
+			"building":"Perfecto",
+			"floor":"7",
+			"x": "461", 
+			"y": "321",
+			"class":"interest"
+},
+"MensCR 7F" : 
+			{ 
+			"pointname":"Men's Comfort Room", 
+			"building":"Perfecto",
+			"floor":"7",
+			"x": "456", 
+			"y": "315",
+			"class":"interest"
+}

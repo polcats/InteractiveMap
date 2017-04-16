@@ -1,0 +1,120 @@
+{ 
+	"pointname": "Clinical Lab", 
+	"building": "Rizal",
+	"floor": "1st",
+	"x": "412", 
+	"y": "562",
+	"class": "interest"
+},
+{ 
+	"pointname": "Department Head's Office - SNS", 
+	"building": "Rizal",
+	"floor": "2nd",
+	"x": "433", 
+	"y": "590",
+	"class": "interest"
+},
+{ 
+	"pointname": "Laboratory Technician's Office", 
+	"building": "Rizal",
+	"floor": "2nd",
+	"x": "453", 
+	"y": "605",
+	"class": "interest"
+},
+{ 
+	"pointname": "X Ray Laboratory Room", 
+	"building": "Rizal",
+	"floor": "3rd",
+	"x": "452", 
+	"y": "611",
+	"class": "interest"
+},
+{ 
+	"pointname": "Faculty Room - SNS", 
+	"building": "Rizal",
+	"floor": "3rd",
+	"x": "444", 
+	"y": "586",
+	"class": "interest"
+},
+{ 
+	"pointname": "Audio Visual Room", 
+	"building": "Rizal",
+	"floor": "3rd",
+	"x": "393", 
+	"y": "563",
+	"class": "interest"
+},
+{ 
+	"pointname": "College of Medicine International Division", 
+	"building": "Rizal",
+	"floor": "4th",
+	"x": "400", 
+	"y": "569",
+	"class": "interest"
+},
+{ 
+	"pointname": "Dean's Office - SNS", 
+	"building": "Rizal",
+	"floor": "4th",
+	"x": "445", 
+	"y": "573",
+	"class": "interest"
+},
+{ 
+	"pointname": "Serology / Blood Bank", 
+	"building": "Rizal",
+	"floor": "4th",
+	"x": "425", 
+	"y": "567",
+	"class": "interest"
+},
+{ 
+	"pointname": "Dean's Office - SOM", 
+	"building": "Rizal",
+	"floor": "5th",
+	"x": "401", 
+	"y": "577",
+	"class": "interest"
+},
+{ 
+	"pointname": "Conference Room", 
+	"building": "Rizal",
+	"floor": "5th",
+	"x": "389", 
+	"y": "570",
+	"class": "interest"
+},
+{ 
+	"pointname": "Instrument Room", 
+	"building": "Rizal",
+	"floor": "6th",
+	"x": "396", 
+	"y": "557",
+	"class": "interest"
+},
+{ 
+	"pointname": "Laboratory Technician's Office", 
+	"building": "Rizal",
+	"floor": "6th",
+	"x": "444", 
+	"y": "599",
+	"class": "interest"
+},
+{ 
+	"pointname": "Male's Comfort Room", 
+	"building": "Rizal",
+	"floor": "1st, 2nd, 3rd, 4th, 5th, 6th",
+	"x": "459", 
+	"y": "619",
+	"class": "interest"
+},
+{ 
+	"pointname": "Female's Comfort Room", 
+	"building": "Rizal",
+	"floor": "1st, 2nd, 3rd, 4th, 5th, 6th",
+	"x": "472", 
+	"y": "602",
+	"class": "interest"
+},
