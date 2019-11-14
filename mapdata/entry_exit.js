@@ -1,4 +1,4 @@
-{
+var Entries = {
    "Points":[{
       "location":"SLU Main Campus",
       "name":"[Gate] Main Gate",
@@ -537,4 +537,4 @@
       "y":"1154",
       "class":"exit"
    }]
-}
+};

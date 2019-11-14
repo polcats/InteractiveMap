@@ -1,10 +1,10 @@
-{
+var Labels = {
 	"Labels":[
 		{
 			"name":"Parking Bldg.",
 			"x": "270",
 			"y": "100",
-			"for":"Parking_Lot, 52" // <name of building>, <indexnumber> in mapdata.json, 
+			"for":"Parking_Lot, 52"// format: <name of building>, <indexnumber> in mapdata.json
 		},
 		{
 			"name":"D. Silang",
@@ -127,4 +127,4 @@
 			"for":"MensDorm, 39"
 		}
 	]
-}
+};

@@ -4,11 +4,11 @@
 
 @font-face {
     font-family: Quicksand;
-    src: url(fonds/Quicksand.otf);
+    src: url(fonts/Quicksand.otf);
 }
 @font-face {
     font-family: Dense;
-    src: url(fonds/Dense.otf);
+    src: url(fonts/Dense.otf);
 }
 
 body {

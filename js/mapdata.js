@@ -1,57 +1,23 @@
-function storeDataInLS(fileName, localID) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", fileName, true);
-	xhttp.setRequestHeader("Content-type", "application/json");
-		xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-		     var res = this.responseText;
-		     var string = JSON.stringify(res);
-		     localStorage.setItem(localID, string);
-		}
-	};
-	xhttp.send();
+function storeDataInLS(localID) {
+	if(localStorage.getItem(localID) == undefined)
+	{
+		eval("var string = JSON.stringify(" + localID + ")");
+		localStorage.setItem(localID, string);
+	}
 }
 
-// load data if they are not in LS yet
-if(localStorage.getItem("Map") == undefined) 
-	storeDataInLS("mapdata.json", "Map");
-if(localStorage.getItem("entry_points") == undefined)
-	storeDataInLS("entry_exitv6.json", "entry_points");
-if(localStorage.getItem("paths") == undefined)
-	storeDataInLS("paths-v7.json", "paths");
-if(localStorage.getItem("pois") == undefined)
-	storeDataInLS("poi-v6.json", "pois");
-if(localStorage.getItem("labels") == undefined)
-	storeDataInLS("labels.json", "labels");
-
-// eval is used because parsed item coming from LS is still a string
-var mapObjectsJSON = localStorage.getItem("Map");
-var mapObj = JSON.parse(mapObjectsJSON);
-//console.log(typeof mapObj);
-
-try {
-eval("var data = " + mapObj);
-	//console.log(data);
-} catch(e) {
-	var data = mapObj;
+function loadDataFromLS(localID) {
+	localData = localStorage.getItem(localID)
+	if(localData != "undefined")
+	{
+		eval(localID + " = " + localData);
+	}
 }
 
-var entryObjectsJSON = localStorage.getItem("entry_points");
-var entryObj = JSON.parse(entryObjectsJSON);
-eval("var entrydata = " + entryObj);
-
-var pathsObjectsJSON = localStorage.getItem("paths");
-var pathsObj = JSON.parse(pathsObjectsJSON);
-eval("var pathsdata = " + pathsObj);
-
-var poisObjectsJSON = localStorage.getItem("pois");
-var poisObj = JSON.parse(poisObjectsJSON);
-eval("var poisdata = " + poisObj);
-
-var labelsObjectsJSON = localStorage.getItem("labels");
-var labelsObj = JSON.parse(labelsObjectsJSON);
-eval("var labelsdata = " + labelsObj);
-
+var dataSources = ["MapData", "Entries", "Paths", "PointsOfInterest", "Labels"];
+for (i = 0; i < dataSources.length; ++i) {
+	storeDataInLS(dataSources[i]);
+}
 
 // this is used to parse svgs
 // directly appending them to html elements will work but they will not be rendered
@@ -162,7 +128,7 @@ function generatePointsOfInterests(array) {
 			"\" name=\""+arr.pointname+"\" cx=\""+arr.x+"\" cy=\""+arr.y+"\" onclick=\"pointOfInterestDetails("+v+");\" class=\""+
 			arr.class+"\" /></a>";
 			document.getElementById(mainSVG).appendChild(parseSVG(element));
-		}		
+		}
 	}
 }
 
@@ -177,7 +143,7 @@ function generateStructures(array) {
 			var element = "<polygon class=\""+array[f]["class"]+
 			"\" id=\""+array[f]["name"]+
 			"\" points=\""+array[f]["points"]+"\" "+event+"></polygon>";
-		
+
 			document.getElementById(mainSVG).appendChild(parseSVG(element));
 		} else if(array[f].type.match(/ellipse/g)) {
 			var element = "<ellipse class=\""+array[f]["class"]+

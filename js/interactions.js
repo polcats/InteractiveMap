@@ -49,16 +49,16 @@ var currentBuildingIndex = null;
 function notes(action) {
 	if(action == 1) {
 		// assign the map data to newData
-		var newData = data;
+		var newData = MapData;
 
 		// modify the property with the text input by the user
 		newData["Structures"][currentBuildingIndex].text = document.getElementById("text").value;
 
 		// save new map data in LS
-		localStorage.setItem("Map", JSON.stringify(newData));
+		localStorage.setItem("MapData", JSON.stringify(newData));
 
 		// load new data
-		var newMapObj = localStorage.getItem("Map");
+		var newMapObj = localStorage.getItem("MapData");
 		var parsedNewObj = JSON.parse(newMapObj);
 		data = parsedNewObj;
 	}
@@ -71,7 +71,7 @@ var building = "";
 
 // the actions of the three modes are controlled by this function
 function doActivity(destinationName, detailID) {
-	var array = pathsdata["Paths"];
+	var array = Paths["Paths"];
 	var beforepoints = document.getElementsByClassName("point")[0];
 
 	// removes previous paths
@@ -116,9 +116,9 @@ function doActivity(destinationName, detailID) {
 	// Mode: Building Details
 	if(showdetailsactive) { //show details
 		var detailBox = document.getElementById("details");
-		var buildingName = data["Structures"][detailID].displayname;
-		var desc  = data["Structures"][detailID].description;
-		var notes = data["Structures"][detailID].text;
+		var buildingName = MapData["Structures"][detailID].displayname;
+		var desc  = MapData["Structures"][detailID].description;
+		var notes = MapData["Structures"][detailID].text;
 		detailBox.childNodes[1].innerHTML = "<span class=\"building\">" + buildingName + "</span>";
 
 		document.getElementById("content").setAttribute("style", "display: none;");
@@ -375,8 +375,8 @@ function filterPoints() {
 			}
 		} else {
 			// show filtered points
-			var filterClass = "interestpoint " + poisdata["BuildingFilters"][buildingFilter].keyword +
-			 " " + poisdata["FloorFilters"][floorFilter].keyword + " " + poisdata["RoomFilters"][roomFilter].keyword;
+			var filterClass = "interestpoint " + PointsOfInterest["BuildingFilters"][buildingFilter].keyword +
+			 " " + PointsOfInterest["FloorFilters"][floorFilter].keyword + " " + PointsOfInterest["RoomFilters"][roomFilter].keyword;
 			//console.log(filterClass);
 			var selected = document.getElementsByClassName(filterClass);
 			for(u = 0; u < selected.length; u++) { // show selected by filter all
