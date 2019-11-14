@@ -1,5 +1,5 @@
 /*
-CSS3 Validation Result: No errors
+	CSS3 Validation Result: No errors
 */
 
 @media screen and (min-device-width: 320px) and (min-device-height: 568px) { /*portrait for iphone 5*/
@@ -126,7 +126,6 @@ CSS3 Validation Result: No errors
 	}
 }
 
-
 @media screen and (min-device-width: 414px) and (min-device-height: 736px) { /*iPhone6s+ Portrait*/
 	div#details {
 		height: 70vh;
@@ -140,7 +139,6 @@ CSS3 Validation Result: No errors
 	}
 }
 
-
 @media screen and (min-device-width: 736px) and (min-device-height: 414px) { /*landscape for iPhone6s+*/
 	div#details {
 		height: 70vh;
@@ -153,7 +151,6 @@ CSS3 Validation Result: No errors
 		margin-top: -30vh;
 	}
 }
-
 
 @media screen and (min-device-width: 768px) and (min-device-height: 1024px) { /*portrait for iPad*/
 	div#details {
@@ -173,8 +170,6 @@ CSS3 Validation Result: No errors
 		margin-top: -12.5vh;
 	}
 }
-
-
 
 @media screen and (min-device-width: 1024px) and (min-device-height: 768px) { /*landscape for iPad and smaller laptops*/
 	div#details {
@@ -243,44 +238,3 @@ CSS3 Validation Result: No errors
 		margin-top: -12.5vh;
 	}
 }
-
-
-/* Laptops and others */
-/*@media (min-device-width: 900px) and (min-device-height: 400px) { 
-
-
-	div#details h1 {
-		font-size: 1.2rem;
-		padding: 0.1rem;
-	}
-	div#details {
-		width: 35vw;
-		margin-left: -17.5vw;
-		height: 50vh;
-		max-height: 200px;
-		margin-top: -25vh;
-	}
-	div#details p.list {
-		font-size: 1.1rem;
-	}
-	div#details textarea {
-		height: 50%;
-	}
-	div#details input[type="button"] {
-		height: 1.5rem;
-		margin: 0.3rem;
-		font-size: 0.9rem;
-	}
-	div#options h3 {
-		font-size: 1.5rem;
-	}
-	div#options p {
-		font-size: 1rem;
-	}
-	div#options {
-		width: 30vw;
-		margin-left: -15vw;
-		height: 40vh;
-		margin-top: -20vh;
-	}
-}*/

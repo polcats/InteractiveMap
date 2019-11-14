@@ -1,16 +1,3 @@
-/*
-function switchDisplay(num) {
-	if(num == 0) {
-		document.getElementById("mapcontainer").style.display="block";
-		document.getElementById("notescontainer").setAttribute("style", "display: none");
-	} else {
-		document.getElementById("mapcontainer").style.display="none";
-		document.getElementById("notescontainer").setAttribute("style", "display: block");
-	}
-}
-*/
-
-
 function setUp(q, response) {
 	var setup = document.getElementById("setup");
 	setup.innerHTML = "";
@@ -58,16 +45,15 @@ function setUp(q, response) {
 	}
 }
 
-
 var currentBuildingIndex = null;
 function notes(action) {
 	if(action == 1) {
 		// assign the map data to newData
 		var newData = data;
-		
+
 		// modify the property with the text input by the user
 		newData["Structures"][currentBuildingIndex].text = document.getElementById("text").value;
-		
+
 		// save new map data in LS
 		localStorage.setItem("Map", JSON.stringify(newData));
 
@@ -113,7 +99,7 @@ function doActivity(destinationName, detailID) {
 	} catch(e) { }
 
 	// reset when mode is changed
-	if(!showpathsactive) { 
+	if(!showpathsactive) {
 		b1 = "Initial1";
 		b2 = "Initial2";
 	}
@@ -156,7 +142,7 @@ function doActivity(destinationName, detailID) {
 			var pair = array[v].pair;
 			var direction = "";
 			if((pair.indexOf(gate) >= 0) && (pair.indexOf(building) >= 0)) {
-				
+
 				if(pair.indexOf(gate) < pair.indexOf(building)) { // default
 					direction = "reverse";
 				} else {
@@ -200,10 +186,10 @@ function doActivity(destinationName, detailID) {
 	for(n = 0; n < array.length; n++) {
 		var pair = array[n].pair;
 		var direction = "";
-		
+
 		// alternates disabled in if-statement
 		if((pair.indexOf(b1) >= 0) && (pair.indexOf(b2) >= 0) && b1!==b2 && !showBuildingPathsActive  && array[n].type != "alternate") {
-			
+
 			// check path animation direction
 			// if animation direction is wrong, just interchange the order of the pair buildings in the json file
 			if(pair.indexOf(b1) < pair.indexOf(b2)) { // default arrangement in JSON
@@ -259,13 +245,13 @@ function resetElements() {
 
 	// reset textarea display when clicking entry points
 	document.getElementById("textcontainer").removeAttribute("style");
-	
+
 	// reset previous entry point's class to remove css animation
 	try {
 		document.getElementsByClassName("currentpoint")[0].removeAttribute("class");
 	} catch(e) {
 		// alert(e);
-	} 
+	}
 }
 
 var interestPoints = true;
@@ -380,7 +366,7 @@ function filterPoints() {
 
 		//if(interestPoints) {
 		//}
-	
+
 		if(!interestPoints) {
 			// hide all if points are disabled
 			var allPoints = document.getElementsByClassName("interestpoint");
@@ -399,8 +385,6 @@ function filterPoints() {
 	}
 }
 
-
-
 var currentZoom = 100;
 // function used to zoom in/out the map
 function magnify(action) {
@@ -415,7 +399,7 @@ function magnify(action) {
     	zoomLevelText.value = currentZoom + "%";
     	document.getElementById("mapcontainer").setAttribute("style", "zoom: "+currentZoom/100+";");
     }
-    
+
     saveSettings();
 }
 
@@ -480,7 +464,7 @@ function loadSettings() {
 
 		// load the previous status whether the filter is checked or not
 		document.getElementById("filter").checked = settings["Settings"].filter;
-		
+
 		interestPoints  = settings["Settings"].filter; // true/false
 
 		buildingFilter = settings["Settings"].bfilter;
@@ -515,7 +499,7 @@ function loadSettings() {
 		document.getElementById("mapcontainer").setAttribute("style", "zoom: "+settings["Settings"].zoom/100+";");
 		document.getElementById("zoom").value = settings["Settings"].zoom + "%";
 		currentZoom = settings["Settings"].zoom;
-		
+
 		magnify("do nothing");
 
 	//} catch(e) { // no saved settings yet

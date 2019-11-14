@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html manifest="manifest.appcache">
+<html>
 <head>
-	<!--
-	Validation result: 1 issue
-		-warning about user's capability to resize document 
-	-->
 	<title>Saint Louis University Information Map</title>
 	<meta id="view" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<link rel="icon" href="map.png" />
+	<link rel="icon" href="images/map.png" />
 	<script type="text/javascript">
 	var setgate = null;
 	function saveInitialSettings(state) {
@@ -28,11 +24,11 @@
 		localStorage.setItem("settings", JSON.stringify(initial));
 	}
 	</script>
-	<script src="mapdata.js" type="text/javascript"></script>
-	<script src="interactions.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="map-svg-related.css" />
-	<link rel="stylesheet" href="responsive.css" />
+	<script src="js/mapdata.js" type="text/javascript"></script>
+	<script src="js/interactions.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/map-svg-related.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 	<script type="text/javascript">
@@ -59,7 +55,7 @@
 
 		<div class="twocolumns">
 			<h3 class="first">Mode</h3>
-			<select class="second" name="active" id="active" onchange="switchActiveMode();"> 
+			<select class="second" name="active" id="active" onchange="switchActiveMode();">
 				<option value="0">Building-to-Building Paths </option>
 				<option value="1">Gate-to-Building Paths</option>
 				<option value="2">Building Details </option>
@@ -70,7 +66,7 @@
 
 		<div class="twocolumns">
 			<h3 class="first">Gate</h3>
-			<select class="second" name="gates" id="gates" onchange="changeGate();" disabled> 
+			<select class="second" name="gates" id="gates" onchange="changeGate();" disabled>
 			</select>
 			<div class="clear"></div>
 		</div>
@@ -85,21 +81,21 @@
 
 		<div class="twocolumns">
 			<h3 class="first">Building</h3>
-			<select disabled class="second" name="mainfilter" id="filterbldg" onchange="buildingFilter = this.selectedIndex;"> 
+			<select disabled class="second" name="mainfilter" id="filterbldg" onchange="buildingFilter = this.selectedIndex;">
 			</select>
 			<div class="clear"></div>
 		</div>
 
 		<div class="twocolumns">
 			<h3 class="first">Floor</h3>
-			<select disabled class="second" name="mainfilter" id="filterfloor" onchange="floorFilter = this.selectedIndex;"> 
+			<select disabled class="second" name="mainfilter" id="filterfloor" onchange="floorFilter = this.selectedIndex;">
 			</select>
 			<div class="clear"></div>
 		</div>
 
 		<div class="twocolumns">
 			<h3 class="first">Type</h3>
-			<select disabled class="second" name="mainfilter" id="filterroom" onchange="roomFilter = this.selectedIndex;"> 
+			<select disabled class="second" name="mainfilter" id="filterroom" onchange="roomFilter = this.selectedIndex;">
 			</select>
 			<div class="clear"></div>
 		</div>
@@ -140,35 +136,35 @@
 	<form id="gateform">
                 <div class="choice">
                     <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
-                    <label for="radio-1" class="radio-custom-label" onclick="setgate=0"> 
+                    <label for="radio-1" class="radio-custom-label" onclick="setgate=0">
                         <span>Main Gate</span>
                         <img src="0.jpg" alt="Main Gate" title="Main Gate" />
-                    </label> 
+                    </label>
                 </div>
 
                 <div class="choice">
                     <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
-                    <label for="radio-3" class="radio-custom-label" onclick="setgate=1"> 
+                    <label for="radio-3" class="radio-custom-label" onclick="setgate=1">
                         <span>Gate 4</span>
                         <img  src="4.jpg" alt="Gate 4" title="Gate 4" />
-                    </label> 
+                    </label>
                 </div>
 
                 <div class="choice">
                     <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
-                    <label for="radio-2" class="radio-custom-label" onclick="setgate=2"> 
+                    <label for="radio-2" class="radio-custom-label" onclick="setgate=2">
                         <span>Gate 5</span>
                         <img src="5.jpg" alt="Gate 5" title="Gate 3" />
-                    </label> 
-                </div>           
+                    </label>
+                </div>
 
                 <div class="choice">
                     <input id="radio-4" class="radio-custom" name="radio-group" type="radio">
-                    <label for="radio-4" class="radio-custom-label" onclick="setgate=3"> 
+                    <label for="radio-4" class="radio-custom-label" onclick="setgate=3">
                         <span>Gate 6</span>
                         <img src="6.jpg" alt="Gate 6" title="Gate 6" />
-                    </label> 
-                </div> 
+                    </label>
+                </div>
 
     </form>
     	<div id="space"></div>
