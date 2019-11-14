@@ -275,13 +275,13 @@ var MapData = {
       },
       {
          "name":"Aden-SWA",
-         "points":"559.802,601.785 573.446,580.96 480.65,518.918 466.813,539.445 	",
+         "points":"559.802,601.785 573.446,580.96 480.65,518.918 466.813,539.445     ",
          "class":"shaded",
          "type":"polygon"
       },
       {
          "name":"SH-Rizal_shade",
-         "points":"480.885,692.112 490.73,675.426 358.5,583.5 346,602.073 	",
+         "points":"480.885,692.112 490.73,675.426 358.5,583.5 346,602.073     ",
          "class":"shaded",
          "type":"polygon"
       },
@@ -322,7 +322,7 @@ var MapData = {
       {
          "name":"Rizal",
          "displayname":"Dr. Jose P. Rizal Building",
-         "points":"397.002,527.815 358.5,583.5 459.326,653.774 497.75,593.75 	",
+         "points":"397.002,527.815 358.5,583.5 459.326,653.774 497.75,593.75     ",
          "class":"Building",
          "type":"polygon",
          "text":"You can add a note here.",
@@ -331,7 +331,7 @@ var MapData = {
       {
          "name":"Chapel",
          "displayname":"SLU Chapel",
-         "points":"275.371,209.355 304.371,161.688 351.871,193.521 322.333,242.667 	",
+         "points":"275.371,209.355 304.371,161.688 351.871,193.521 322.333,242.667     ",
          "class":"Building",
          "type":"polygon",
          "text":"You can add a note here.",
@@ -349,7 +349,7 @@ var MapData = {
       {
          "name":"Parking_Lot",
          "displayname":"Parking Building",
-         "points":"227.038,84.355 275.371,18.355 378.372,105.022 329.705,168.355 	",
+         "points":"227.038,84.355 275.371,18.355 378.372,105.022 329.705,168.355     ",
          "class":"Building",
          "type":"polygon",
          "text":"You can add a note here.",
@@ -367,7 +367,7 @@ var MapData = {
       {
          "name":"Aden",
          "displayname":"Dr. Conrad Adenaur Building",
-         "points":"455.418,378.855 400.252,462.332 525.164,545.461 580.332,463.855 	",
+         "points":"455.418,378.855 400.252,462.332 525.164,545.461 580.332,463.855     ",
          "class":"Building",
          "type":"polygon",
          "text":"You can add a note here.",
@@ -376,7 +376,7 @@ var MapData = {
       {
          "name":"Perfecto",
          "displayname":"Dr. Waldo Perfecto Building",
-         "points":"478.34,304.906 458.783,338.106 325.333,244 355.257,195.239 476.09,277.862  466.258,297.239 	",
+         "points":"478.34,304.906 458.783,338.106 325.333,244 355.257,195.239 476.09,277.862  466.258,297.239     ",
          "class":"Building",
          "type":"polygon",
          "text":"You can add a note here.",
@@ -394,7 +394,7 @@ var MapData = {
       {
          "name":"Hahn",
          "displayname":"Otto Hahn Building",
-         "points":"543.25,591.423 595.25,624.327 496.168,806.327 438.301,769.327 	",
+         "points":"543.25,591.423 595.25,624.327 496.168,806.327 438.301,769.327     ",
          "class":"Building",
          "type":"polygon",
          "text":"You can add a note here.",

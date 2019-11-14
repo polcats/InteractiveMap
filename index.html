@@ -1,120 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Saint Louis University Information Map</title>
-	<meta id="view" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<link rel="icon" href="images/map.png" />
-	<script type="text/javascript" src="mapdata/mapdata.js"></script>
-	<script type="text/javascript" src="mapdata/paths.js"></script>
-	<script type="text/javascript" src="mapdata/entry_exit.js"></script>
-	<script type="text/javascript" src="mapdata/labels.js"></script>
-	<script type="text/javascript" src="mapdata/poi.js"></script>
-	<script type="text/javascript">
-	var setgate = null;
-	function saveInitialSettings(state) {
-		var initial = {};
-		initial.Settings = {};
-		initial.Settings.mode = "0";
-		initial.Settings.gate = "0";
-		initial.Settings.entry = true;
-		initial.Settings.zoom = 100;
-		initial.Settings.filter = true;
-		initial.Settings.bfilter = "0";
-		initial.Settings.ffilter = "0";
-		initial.Settings.rfilter = "0";
-		if(!state) {
-			initial.Settings.mode = "1";
-			initial.Settings.gate = "" + setgate;
-		}
-		localStorage.setItem("settings", JSON.stringify(initial));
-	}
-	</script>
-	<script src="js/mapdata.js" type="text/javascript"></script>
-	<script src="js/interactions.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		for (i = 0; i < dataSources.length; ++i) {
-			loadDataFromLS(dataSources[0]);
-		}
-	</script>
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/map-svg-related.css" />
-	<link rel="stylesheet" href="css/responsive.css" />
+    <title>Saint Louis University Information Map</title>
+    <meta id="view" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="icon" href="images/map.png" />
+    <script type="text/javascript" src="mapdata/mapdata.js"></script>
+    <script type="text/javascript" src="mapdata/paths.js"></script>
+    <script type="text/javascript" src="mapdata/entry_exit.js"></script>
+    <script type="text/javascript" src="mapdata/labels.js"></script>
+    <script type="text/javascript" src="mapdata/poi.js"></script>
+    <script type="text/javascript">
+    var setgate = null;
+    function saveInitialSettings(state) {
+        var initial = {};
+        initial.Settings = {};
+        initial.Settings.mode = "0";
+        initial.Settings.gate = "0";
+        initial.Settings.entry = true;
+        initial.Settings.zoom = 100;
+        initial.Settings.filter = true;
+        initial.Settings.bfilter = "0";
+        initial.Settings.ffilter = "0";
+        initial.Settings.rfilter = "0";
+        if(!state) {
+            initial.Settings.mode = "1";
+            initial.Settings.gate = "" + setgate;
+        }
+        localStorage.setItem("settings", JSON.stringify(initial));
+    }
+    </script>
+    <script src="js/mapdata.js" type="text/javascript"></script>
+    <script src="js/interactions.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        for (i = 0; i < dataSources.length; ++i) {
+            loadDataFromLS(dataSources[0]);
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/map-svg-related.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
-	<script type="text/javascript">
-		if(localStorage.getItem("setupdone") != undefined) {
-			var style = document.createElement("style");
-			style.innerText = "html body div#setup {display: none };"
-			document.getElementsByTagName("head")[0].appendChild(style);
-			document.getElementsByTagName("body")[0].setAttribute("style", "overflow: visible;");
-		}
-	</script>
+    <script type="text/javascript">
+        if(localStorage.getItem("setupdone") != undefined) {
+            var style = document.createElement("style");
+            style.innerText = "html body div#setup {display: none };"
+            document.getElementsByTagName("head")[0].appendChild(style);
+            document.getElementsByTagName("body")[0].setAttribute("style", "overflow: visible;");
+        }
+    </script>
 
 <div id="bar">
-	<input type="image" src="images/settings.png" title="settings" alt="settings" onclick="showSettings();" />
-	<input type="image" src="images/minus.png" title="zoom out" alt="zoom out" onclick="magnify(false);" />
-	<input type="image" src="images/plus.png" title="zoom in" alt="zoom in" onclick="magnify(true);" />
-	<input id="zoom" type="text" value="100%" />
-	<!--<input id="floor" type="text" value="" /> This is used by the pointsAtFloor function. -->
+    <input type="image" src="images/settings.png" title="settings" alt="settings" onclick="showSettings();" />
+    <input type="image" src="images/minus.png" title="zoom out" alt="zoom out" onclick="magnify(false);" />
+    <input type="image" src="images/plus.png" title="zoom in" alt="zoom in" onclick="magnify(true);" />
+    <input id="zoom" type="text" value="100%" />
+    <!--<input id="floor" type="text" value="" /> This is used by the pointsAtFloor function. -->
 </div>
 
  <!-- display:none in style.css-->
 <div id="options">
 
-	<form id="activeform">
+    <form id="activeform">
 
-		<div class="twocolumns">
-			<h3 class="first">Mode</h3>
-			<select class="second" name="active" id="active" onchange="switchActiveMode();">
-				<option value="0">Building-to-Building Paths </option>
-				<option value="1">Gate-to-Building Paths</option>
-				<option value="2">Building Details </option>
-			</select>
-			<div class="clear"></div>
-		</div>
-
-
-		<div class="twocolumns">
-			<h3 class="first">Gate</h3>
-			<select class="second" name="gates" id="gates" onchange="changeGate();" disabled>
-			</select>
-			<div class="clear"></div>
-		</div>
-
-		<div id="cboxcontainer">
-			<input id="entry" class="checkbox-custom" name="entry" type="checkbox" onclick="entryPointsInteraction();" checked="true">
-		    <label for="entry" class="checkbox-custom-label">Entry Points</label>
-			<div class="clear"></div>
-			<input id="filter" class="checkbox-custom" name="filter" type="checkbox" onclick="interestPointsInteraction();" checked="true">
-		    <label for="filter" class="checkbox-custom-label">Points of Interests</label>
-	    </div>
-
-		<div class="twocolumns">
-			<h3 class="first">Building</h3>
-			<select disabled class="second" name="mainfilter" id="filterbldg" onchange="buildingFilter = this.selectedIndex;">
-			</select>
-			<div class="clear"></div>
-		</div>
-
-		<div class="twocolumns">
-			<h3 class="first">Floor</h3>
-			<select disabled class="second" name="mainfilter" id="filterfloor" onchange="floorFilter = this.selectedIndex;">
-			</select>
-			<div class="clear"></div>
-		</div>
-
-		<div class="twocolumns">
-			<h3 class="first">Type</h3>
-			<select disabled class="second" name="mainfilter" id="filterroom" onchange="roomFilter = this.selectedIndex;">
-			</select>
-			<div class="clear"></div>
-		</div>
+        <div class="twocolumns">
+            <h3 class="first">Mode</h3>
+            <select class="second" name="active" id="active" onchange="switchActiveMode();">
+                <option value="0">Building-to-Building Paths </option>
+                <option value="1">Gate-to-Building Paths</option>
+                <option value="2">Building Details </option>
+            </select>
+            <div class="clear"></div>
+        </div>
 
 
-		<input id= "save" class="dismiss" type="button" value="Save" onclick="saveSettings(); this.parentElement.parentElement.removeAttribute('style');" />
-		<input class="dismiss" type="button" value="Cancel" onclick="this.parentElement.parentElement.removeAttribute('style');" />
+        <div class="twocolumns">
+            <h3 class="first">Gate</h3>
+            <select class="second" name="gates" id="gates" onchange="changeGate();" disabled>
+            </select>
+            <div class="clear"></div>
+        </div>
 
-	</form>
+        <div id="cboxcontainer">
+            <input id="entry" class="checkbox-custom" name="entry" type="checkbox" onclick="entryPointsInteraction();" checked="true">
+            <label for="entry" class="checkbox-custom-label">Entry Points</label>
+            <div class="clear"></div>
+            <input id="filter" class="checkbox-custom" name="filter" type="checkbox" onclick="interestPointsInteraction();" checked="true">
+            <label for="filter" class="checkbox-custom-label">Points of Interests</label>
+        </div>
+
+        <div class="twocolumns">
+            <h3 class="first">Building</h3>
+            <select disabled class="second" name="mainfilter" id="filterbldg" onchange="buildingFilter = this.selectedIndex;">
+            </select>
+            <div class="clear"></div>
+        </div>
+
+        <div class="twocolumns">
+            <h3 class="first">Floor</h3>
+            <select disabled class="second" name="mainfilter" id="filterfloor" onchange="floorFilter = this.selectedIndex;">
+            </select>
+            <div class="clear"></div>
+        </div>
+
+        <div class="twocolumns">
+            <h3 class="first">Type</h3>
+            <select disabled class="second" name="mainfilter" id="filterroom" onchange="roomFilter = this.selectedIndex;">
+            </select>
+            <div class="clear"></div>
+        </div>
+
+
+        <input id= "save" class="dismiss" type="button" value="Save" onclick="saveSettings(); this.parentElement.parentElement.removeAttribute('style');" />
+        <input class="dismiss" type="button" value="Cancel" onclick="this.parentElement.parentElement.removeAttribute('style');" />
+
+    </form>
 </div>
 
 
@@ -124,26 +124,26 @@
 
  <!-- display:none in style.css-->
 <div id="details">
-	<h1 id="head">&nbsp;</h1>
-	<div id="content"></div>
-	<div id="textcontainer">
-	<textarea id="text" class="note" disabled></textarea>
-	<textarea id="desc" class="desc" disabled></textarea>
-	<input type="button" value="Edit" class='edit' onclick="notes(0); this.parentNode.childNodes[1].removeAttribute('disabled');" />
-	<input type="button" value="Save" class='save' onclick="notes(1); this.parentNode.childNodes[1].setAttribute('disabled', 'disabled');" />
-	</div>
-	<input type="button" value="Close" id="dismiss" onclick="this.parentNode.removeAttribute('style');" />
+    <h1 id="head">&nbsp;</h1>
+    <div id="content"></div>
+    <div id="textcontainer">
+    <textarea id="text" class="note" disabled></textarea>
+    <textarea id="desc" class="desc" disabled></textarea>
+    <input type="button" value="Edit" class='edit' onclick="notes(0); this.parentNode.childNodes[1].removeAttribute('disabled');" />
+    <input type="button" value="Save" class='save' onclick="notes(1); this.parentNode.childNodes[1].setAttribute('disabled', 'disabled');" />
+    </div>
+    <input type="button" value="Close" id="dismiss" onclick="this.parentNode.removeAttribute('style');" />
 </div>
 
 <div id="setup">
-	<div id="content" style="display: table-cell; vertical-align: middle;">
-		<img src="images/logo.png" alt="logo of slu infomap" id="logo" />
-		<input type="button" value="PROCEED" id="proceed" onclick="setUp('0', '1');" />
-	</div>
+    <div id="content" style="display: table-cell; vertical-align: middle;">
+        <img src="images/logo.png" alt="logo of slu infomap" id="logo" />
+        <input type="button" value="PROCEED" id="proceed" onclick="setUp('0', '1');" />
+    </div>
 </div>
 
-	<div id="gateselection" style="display: none;">
-	<form id="gateform">
+    <div id="gateselection" style="display: none;">
+    <form id="gateform">
                 <div class="choice">
                     <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
                     <label for="radio-1" class="radio-custom-label" onclick="setgate=0">
@@ -177,29 +177,29 @@
                 </div>
 
     </form>
-    	<div id="space"></div>
-		<input type="button" value="PROCEED" id="proceed" onclick="setUp(4, 1); saveInitialSettings(true);" />
-	</div>
+        <div id="space"></div>
+        <input type="button" value="PROCEED" id="proceed" onclick="setUp(4, 1); saveInitialSettings(true);" />
+    </div>
 
 
 <script type="text/javascript">
 
 window.onload = function() {
-	try {
-		initializeMainSVG(MapData["mapwidth"], MapData["mapheight"], "map", "mapcontainer");
-		generateStructures(MapData["Structures"]);
-		generateEntries(Entries["Points"]);
-		generatePointsOfInterests(PointsOfInterest["Points"]);
-		generateLabels(Labels["Labels"]);
-		generateGates(Paths["Gates"]);
-		generateFilters(Paths["BuildingFilters"], Paths["FloorFilters"], Paths["RoomFilters"]);
+    try {
+        initializeMainSVG(MapData["mapwidth"], MapData["mapheight"], "map", "mapcontainer");
+        generateStructures(MapData["Structures"]);
+        generateEntries(Entries["Points"]);
+        generatePointsOfInterests(PointsOfInterest["Points"]);
+        generateLabels(Labels["Labels"]);
+        generateGates(Paths["Gates"]);
+        generateFilters(Paths["BuildingFilters"], Paths["FloorFilters"], Paths["RoomFilters"]);
 
-		loadSettings();
-	} catch(e) {
-		// there will be an error because on first load, the LS map data is not existent yet
-		// this however will be handled by the setup process
-		//alert(e);//"Map data is fetched, please reload your browser.");
-	}
+        loadSettings();
+    } catch(e) {
+        // there will be an error because on first load, the LS map data is not existent yet
+        // this however will be handled by the setup process
+        //alert(e);//"Map data is fetched, please reload your browser.");
+    }
 }
 </script>
 
