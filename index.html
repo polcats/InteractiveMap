@@ -32,7 +32,8 @@
     <script src="js/mapdata.js" type="text/javascript"></script>
     <script src="js/interactions.js" type="text/javascript"></script>
     <script type="text/javascript">
-        for (i = 0; i < dataSources.length; ++i) {
+        for (i = 0; i < dataSources.length; ++i) 
+        {
             loadDataFromLS(dataSources[0]);
         }
     </script>
@@ -175,7 +176,6 @@
                         <img src="images/6.jpg" alt="Gate 6" title="Gate 6" />
                     </label>
                 </div>
-
     </form>
         <div id="space"></div>
         <input type="button" value="PROCEED" id="proceed" onclick="setUp(4, 1); saveInitialSettings(true);" />
@@ -192,13 +192,11 @@ window.onload = function() {
         generatePointsOfInterests(PointsOfInterest["Points"]);
         generateLabels(Labels["Labels"]);
         generateGates(Paths["Gates"]);
-        generateFilters(Paths["BuildingFilters"], Paths["FloorFilters"], Paths["RoomFilters"]);
+        generateFilters(PointsOfInterest["BuildingFilters"], PointsOfInterest["FloorFilters"], PointsOfInterest["RoomFilters"]);
 
         loadSettings();
     } catch(e) {
-        // there will be an error because on first load, the LS map data is not existent yet
-        // this however will be handled by the setup process
-        //alert(e);//"Map data is fetched, please reload your browser.");
+        console.log(e);
     }
 }
 </script>

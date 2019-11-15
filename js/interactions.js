@@ -443,7 +443,7 @@ function saveSettings() {
 
 function loadSettings() {
     var settings = "";
-    //try { // try to load settings if found in LS
+    try { // try to load settings if found in LS
         try {
             settings = localStorage.getItem("settings");
             settings = JSON.parse(settings);
@@ -451,7 +451,7 @@ function loadSettings() {
         } catch(e) {
             settings = localStorage.getItem("settings");
             settings = JSON.parse(settings);
-            //alert(e);
+            console.log(e);
         }
 
         // load the previous mode
@@ -478,6 +478,7 @@ function loadSettings() {
         bldgSelect.selectedIndex = buildingFilter;
         flrSelect.selectedIndex = floorFilter;
         rmSelect.selectedIndex = roomFilter;
+
         if(interestPoints) {
             bldgSelect.removeAttribute("disabled");
             flrSelect.removeAttribute("disabled");
@@ -502,9 +503,9 @@ function loadSettings() {
 
         magnify("do nothing");
 
-    //} catch(e) { // no saved settings yet
-    //    alert(e);
-    //}
+    } catch(e) { // no saved settings yet
+       console.log(e);
+    }
 }
 
 
