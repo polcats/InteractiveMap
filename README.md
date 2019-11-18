@@ -19,7 +19,7 @@ The large chunk of the map data was created using Adobe Illustrator:
     <li>Map Data</li>
 </ul>
 
-The rest were created either by using a generator or by manual plotting (they mostly use common points):
+The rest were created by using the <a href="https://github.com/polcats/SVGCoordinateFinder">CoordinateFinder</a>:
 <ul>
     <li>Entry/Exit</li>
     <li>Paths</li>
@@ -28,6 +28,31 @@ The rest were created either by using a generator or by manual plotting (they mo
 
 <h2>What else can be done</h2>
 <ul>
-    <li>Add the old generator for the paths.</li>
     <li>Add support for loading different formats of data files.</li>
 </ul>
+
+<h2>Contributors for the SLU Map</h2>
+<h3>Map Design/Creation</h3>
+<ul>
+<li>Jhennie Prado</li>
+</ul>
+<h3>Map Elements Survering and Processing</h3>
+<ul>
+<li>Mandy Lee</li>
+<li>Clark Mariano</li>
+<li>Derick Liwanag</li>
+<li>Erico Erese</li>
+<li>Patricia Canaria</li>
+<li>Sam Lopez</li>
+</ul>
+
+<h3>Photography</h3>
+<ul>
+<li>Hiromi Uetmatsu</li>
+</ul>
+
+<h3>Developer</h3>
+<ul>
+<li>Paul Catalan</li>
+</ul>
+
