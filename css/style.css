@@ -159,6 +159,12 @@ form#gateform img {
     max-height: 2.4rem;
     max-width: 2.4rem;
 }
+
+#bar input[type="image"]#github {
+    position: absolute;
+    right: 20px;
+}
+
 #bar input[type="text"] {
     background: #222;
     border: none;
