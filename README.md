@@ -13,8 +13,8 @@ This is a framework that can generate an interactive SVG map by loading data poi
 </ul>
 
 <h4>How was the map created</h4>
-The map was initially created using Adobe Illustrator.
-It was later on converted to the generalized map structure types.
+The main map was initially created using Adobe Illustrator. It is consist of the items listed below. <br>
+It was later on converted to the generalized map structure types in JSON format.
 <ul>
     <li>Labels</li>
     <li>Map Data</li>
@@ -28,11 +28,7 @@ The rest were created by using the <a href="https://github.com/polcats/SVGCoordi
 </ul>
 
 <h2>Possible Future Features</h2>
-<ul>
-    <li>Add support for loading different formats of data files.</li>
-    <li>Add functionality to display the user's location based on GPS coordinates.</li>
-    <li>Create an SVG to JSON converter (svg map to generalized structure types).</li>
-</ul>
+<p>Please take a look at the <a href="https://github.com/polcats/InteractiveSVGMap/projects">Project</a> page for more details.</p>
 
 <h2>Contributors for the SLU Map</h2>
 <h3>SLU Map Creation</h3>
