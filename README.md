@@ -13,14 +13,14 @@ This is a framework that can generate an interactive SVG map by loading data poi
 </ul>
 
 <h4>How was the map created</h4>
-The main map was initially created using Adobe Illustrator. It is consist of the items listed below. <br>
-It was later on converted to the generalized map structure types in JSON format.
+<p>The main map was initially created using Adobe Illustrator. It consists of the items listed below. <br>
+It was later on converted to the generalized map structure types in JSON format.</p>
 <ul>
     <li>Labels</li>
     <li>Map Data</li>
 </ul>
 
-The rest were created by using the <a href="https://github.com/polcats/SVGCoordinateFinder">CoordinateFinder</a>:
+<p>The rest were created by using the <a href="https://github.com/polcats/SVGCoordinateFinder">CoordinateFinder</a>:</p>
 <ul>
     <li>Entry/Exit</li>
     <li>Paths</li>
