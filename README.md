@@ -35,7 +35,7 @@ It was later on converted to the generalized map structure types in JSON format.
 <ul>
 <li>Jhennie Prado</li>
 </ul>
-<h3>Map Elements Surveying and Processing</h3>
+<h3>Map Surveying and Data Preprocessing</h3>
 <ul>
 <li>Mandy Lee</li>
 <li>Clark Mariano</li>
