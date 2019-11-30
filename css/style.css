@@ -54,14 +54,14 @@ body {
     margin: 0;
     text-transform: uppercase;
 }
-#setup img#logo{
+#setup img#logo {
     display: block;
     width: 70vw;
     max-width: 300px;
     margin: 0 auto;
     clear: both;
 }
-#setup input[type="button"] {
+#setup input[type='button'] {
     width: 50vw;
     max-width: 200px;
     height: 45px;
@@ -73,7 +73,7 @@ form#gateform {
     overflow: auto;
 }
 form#gateform div {
-    text-align:center;
+    text-align: center;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -102,7 +102,8 @@ form#gateform img {
     opacity: 0;
     position: absolute;
 }
-.radio-custom, .radio-custom-label {
+.radio-custom,
+.radio-custom-label {
     display: block;
     margin: 5px;
     cursor: pointer;
@@ -139,7 +140,7 @@ form#gateform img {
     box-shadow: inset 0px 0px 0px 4px #fff;
 }
 .radio-custom:focus + .radio-custom-label {
-  outline: 1px solid #ddd;
+    outline: 1px solid #ddd;
 }
 
 #bar {
@@ -153,24 +154,24 @@ form#gateform img {
     padding: 0.3rem;
     z-index: 100000;
 }
-#bar input[type="image"] {
-    margin: 0 0.2rem 0 0.2rem ;
+#bar input[type='image'] {
+    margin: 0 0.2rem 0 0.2rem;
     padding: 0;
     max-height: 2.4rem;
     max-width: 2.4rem;
 }
 
-#bar input[type="image"]#github {
+#bar input[type='image']#github {
     position: absolute;
     right: 20px;
 }
 
-#bar input[type="text"] {
+#bar input[type='text'] {
     background: #222;
     border: none;
     position: relative;
     top: -0.5rem;
-    margin: 0 0.2rem 0 0.2rem ;
+    margin: 0 0.2rem 0 0.2rem;
     padding: 0;
     width: 2.5rem;
     height: 1rem;
@@ -185,16 +186,17 @@ form#gateform img {
 #options select:disabled {
     background: #ddd;
 }
-#options input[type="button"] {
+#options input[type='button'] {
     font-size: 1.1rem;
     margin: 0.5rem auto;
 }
-#map {}
+#map {
+}
 #mapcontainer {
-     padding: 0px;
-     width: 768px;
-     height: 1024px;
-     margin: 0 auto;
+    padding: 0px;
+    width: 768px;
+    height: 1024px;
+    margin: 0 auto;
 }
 div#options {
     display: none;
@@ -210,9 +212,9 @@ div#options {
     z-index: 1000;
     text-align: center;
     color: #000;
-      box-shadow: 0 0 0 5px #000;
-      padding: 0.5rem 0rem 0.5rem 0rem;
-      border-radius: 0.5rem;
+    box-shadow: 0 0 0 5px #000;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    border-radius: 0.5rem;
 }
 div#options form {
     height: 100%;
@@ -231,7 +233,7 @@ div#options .twocolumns .clear {
     clear: both;
 }
 div#options .twocolumns .first {
-    width: 30%;
+    width: 20%;
     float: left;
 }
 div#options .twocolumns .second {
@@ -252,7 +254,8 @@ div#options .twocolumns .second.chk {
     opacity: 0;
     position: absolute;
 }
-.checkbox-custom, .checkbox-custom-label {
+.checkbox-custom,
+.checkbox-custom-label {
     display: inline-block;
     vertical-align: middle;
     margin: 0.5rem;
@@ -320,8 +323,8 @@ div#details {
     z-index: 1000;
     text-align: center;
     color: #000;
-      box-shadow: 0 0 0 5px #000;
-      border-radius: 0.5rem;
+    box-shadow: 0 0 0 5px #000;
+    border-radius: 0.5rem;
 }
 
 div#details.point {
@@ -331,11 +334,11 @@ div#details.point {
     margin-top: -25vh;
 }
 
-#details input[type="button"] {
+#details input[type='button'] {
     font-size: 1.1rem;
     margin: 0.5rem auto;
 }
-input[type="button"] {
+input[type='button'] {
     width: 5rem;
     height: 1.5rem;
     background: #000;
@@ -346,11 +349,12 @@ input[type="button"] {
     margin: 0.5rem;
     border-radius: 0.25rem;
 }
-input[type="button"]:hover {
+input[type='button']:hover {
     background: #ddd;
     color: #000;
 }
-input.edit, input.save {
+input.edit,
+input.save {
     margin: 0.2rem 0 0 0;
 }
 
