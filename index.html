@@ -8,31 +8,25 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/map-svg-related.css" />
         <link rel="stylesheet" href="css/responsive.css" />
-
-        <script type="text/javascript" src="mapdata/paths.js"></script>
-        <script type="text/javascript" src="mapdata/entry_exit.js"></script>
-        <script type="text/javascript" src="mapdata/labels.js"></script>
-        <script type="text/javascript" src="mapdata/poi.js"></script>
-        <script type="text/javascript" src="mapdata/mapdata.js"></script>
-
+        <script type="text/javascript" src="mapdata/full.js"></script>
         <script type="text/javascript">
             var setgate = null;
             function saveInitialSettings(state) {
                 var initial = {};
                 initial.Settings = {};
-                initial.Settings.mode = '0';
-                initial.Settings.gate = '0';
+                initial.Settings.mode = "0";
+                initial.Settings.gate = "0";
                 initial.Settings.entry = true;
                 initial.Settings.zoom = 100;
                 initial.Settings.filter = true;
-                initial.Settings.bfilter = '0';
-                initial.Settings.ffilter = '0';
-                initial.Settings.rfilter = '0';
+                initial.Settings.bfilter = "0";
+                initial.Settings.ffilter = "0";
+                initial.Settings.rfilter = "0";
                 if (!state) {
-                    initial.Settings.mode = '1';
-                    initial.Settings.gate = '' + setgate;
+                    initial.Settings.mode = "1";
+                    initial.Settings.gate = "" + setgate;
                 }
-                localStorage.setItem('settings', JSON.stringify(initial));
+                localStorage.setItem("settings", JSON.stringify(initial));
             }
         </script>
         <script type="text/javascript" src="js/interactions.js"></script>
@@ -46,11 +40,11 @@
 
     <body>
         <script type="text/javascript">
-            if (localStorage.getItem('setupdone') != undefined) {
-                var style = document.createElement('style');
-                style.innerText = 'html body div#setup {display: none };';
-                document.getElementsByTagName('head')[0].appendChild(style);
-                document.getElementsByTagName('body')[0].setAttribute('style', 'overflow: visible;');
+            if (localStorage.getItem("setupdone") != undefined) {
+                var style = document.createElement("style");
+                style.innerText = "html body div#setup {display: none };";
+                document.getElementsByTagName("head")[0].appendChild(style);
+                document.getElementsByTagName("body")[0].setAttribute("style", "overflow: visible;");
             }
         </script>
 
@@ -194,13 +188,13 @@
         <script type="text/javascript">
             window.onload = function() {
                 try {
-                    initializeMainSVG(MapData['mapwidth'], MapData['mapheight'], 'map', 'mapcontainer');
-                    generateStructures(MapData['Structures']);
-                    generateEntries(Entries['Points']);
-                    generatePointsOfInterests(PointsOfInterest['Points']);
-                    generateLabels(Labels['Labels']);
-                    generateGates(Paths['Gates']);
-                    generateFilters(PointsOfInterest['BuildingFilters'], PointsOfInterest['FloorFilters'], PointsOfInterest['RoomFilters']);
+                    initializeMainSVG(MapData["mapwidth"], MapData["mapheight"], "map", "mapcontainer");
+                    generateStructures(MapData["Structures"]);
+                    generateEntries(Entries["Points"]);
+                    generatePointsOfInterests(PointsOfInterest["Points"]);
+                    generateLabels(Labels["Labels"]);
+                    generateGates(Paths["Gates"]);
+                    generateFilters(PointsOfInterest["BuildingFilters"], PointsOfInterest["FloorFilters"], PointsOfInterest["RoomFilters"]);
 
                     loadSettings();
                 } catch (e) {
