@@ -20,22 +20,15 @@ It was later on converted to the generalized map structure types in JSON format.
     <li>Map Data</li>
 </ul>
 
-<p>The rest were created by using the <a href="https://github.com/polcats/SVGCoordinateFinder">CoordinateFinder</a>:</p>
+<p>The rest were created by using the <a href="https://github.com/polcats/SVGMapPathFinder">PathFinder</a>:</p>
 <ul>
     <li>Entry/Exit</li>
     <li>Paths</li>
     <li>Points of Interest</li>
 </ul>
 
-<h2>Possible Future Features</h2>
-<p>Please take a look at the <a href="https://github.com/polcats/InteractiveSVGMap/projects">Project</a> page for more details.</p>
-
 <h2>Contributors for the SLU Map</h2>
-<h3>SLU Map Creation</h3>
-<ul>
-<li>Jhennie Prado</li>
-</ul>
-<h3>Map Surveying and Data Preprocessing</h3>
+<h3>Surveying & Data Preprocessing</h3>
 <ul>
 <li>Mandy Lee</li>
 <li>Clark Mariano</li>
@@ -48,6 +41,11 @@ It was later on converted to the generalized map structure types in JSON format.
 <h3>Photography</h3>
 <ul>
 <li>Hiromi Uetmatsu</li>
+</ul>
+
+<h3>Map Design</h3>
+<ul>
+<li>Jhennie Prado</li>
 </ul>
 
 <h3>Developer</h3>
