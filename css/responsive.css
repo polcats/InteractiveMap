@@ -2,7 +2,8 @@
     CSS3 Validation Result: No errors
 */
 
-@media screen and (min-device-width: 320px) and (min-device-height: 568px) { /*portrait for iphone 5*/
+@media screen and (min-device-width: 320px) and (min-device-height: 568px) {
+    /*portrait for iphone 5*/
     div#details {
         width: 90vw;
         margin-left: -45vw;
@@ -38,9 +39,10 @@
     }
 }
 
-@media screen and (min-device-width: 568px) and (min-device-height: 320px) { /*landscape for iphone 5*/
-    #setup img#logo{
-        height: 50vh;
+@media screen and (min-device-width: 568px) and (min-device-height: 320px) {
+    /*landscape for iphone 5*/
+    #setup img#logo {
+        height: auto;
         width: auto;
     }
     div#details {
@@ -80,8 +82,8 @@
     }
 }
 
-
-@media screen and (min-device-width: 360px) and (min-device-height: 640px) { /*portrait for Galaxy s5, Nexus 5x, and iPhone6*/
+@media screen and (min-device-width: 360px) and (min-device-height: 640px) {
+    /*portrait for Galaxy s5, Nexus 5x, and iPhone6*/
     div#details {
         height: 75vh;
         margin-top: -37.5vh;
@@ -95,7 +97,8 @@
     }
 }
 
-@media screen and (min-device-width: 640px) and (min-device-height: 360px) { /*landscape for Galaxy s5, Nexus 5x, and iPhone6*/
+@media screen and (min-device-width: 640px) and (min-device-height: 360px) {
+    /*landscape for Galaxy s5, Nexus 5x, and iPhone6*/
     div#details {
         height: 80vh;
         margin-top: -36vh;
@@ -108,8 +111,8 @@
     }
 }
 
-
-@media screen and (min-device-width: 412px) and (min-device-height: 732px) { /*portrait for Nexus 6P*/
+@media screen and (min-device-width: 412px) and (min-device-height: 732px) {
+    /*portrait for Nexus 6P*/
     div#details {
         height: 70vh;
         margin-top: -37.5vh;
@@ -126,7 +129,8 @@
     }
 }
 
-@media screen and (min-device-width: 414px) and (min-device-height: 736px) { /*iPhone6s+ Portrait*/
+@media screen and (min-device-width: 414px) and (min-device-height: 736px) {
+    /*iPhone6s+ Portrait*/
     div#details {
         height: 70vh;
         margin-top: -35vh;
@@ -139,7 +143,8 @@
     }
 }
 
-@media screen and (min-device-width: 736px) and (min-device-height: 414px) { /*landscape for iPhone6s+*/
+@media screen and (min-device-width: 736px) and (min-device-height: 414px) {
+    /*landscape for iPhone6s+*/
     div#details {
         height: 70vh;
         margin-top: -35vh;
@@ -152,7 +157,8 @@
     }
 }
 
-@media screen and (min-device-width: 768px) and (min-device-height: 1024px) { /*portrait for iPad*/
+@media screen and (min-device-width: 768px) and (min-device-height: 1024px) {
+    /*portrait for iPad*/
     div#details {
         height: 30vh;
         margin-top: -20vh;
@@ -171,7 +177,8 @@
     }
 }
 
-@media screen and (min-device-width: 1024px) and (min-device-height: 768px) { /*landscape for iPad and smaller laptops*/
+@media screen and (min-device-width: 1024px) and (min-device-height: 768px) {
+    /*landscape for iPad and smaller laptops*/
     div#details {
         height: 40vh;
         margin-top: -20vh;
@@ -190,7 +197,8 @@
     }
 }
 
-@media screen and (min-device-width: 1280px) and (min-device-height: 600px) { /*landscape for laptops */
+@media screen and (min-device-width: 1280px) and (min-device-height: 600px) {
+    /*landscape for laptops */
     div#details {
         height: 40vh;
         width: 35vw;
@@ -211,7 +219,8 @@
     }
 }
 
-@media screen and (min-device-width: 1024px) and (min-device-height: 1366px) { /*portrait for iPad Pro*/
+@media screen and (min-device-width: 1024px) and (min-device-height: 1366px) {
+    /*portrait for iPad Pro*/
     div#details {
         height: 20vh;
         margin-top: -10vh;
@@ -224,7 +233,8 @@
     }
 }
 
-@media screen and (min-device-width: 1366px) and (min-device-height: 1024px)  { /*landscape for iPad Pro*/
+@media screen and (min-device-width: 1366px) and (min-device-height: 1024px) {
+    /*landscape for iPad Pro*/
     div#details {
         height: 30vh;
         width: 40vw;

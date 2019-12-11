@@ -41,16 +41,17 @@ a.interestpoint circle.CR {
     stroke-width: 1px;
 }
 @keyframes dash {
-  to {
-    stroke-dashoffset: 500;
-  }
+    to {
+        stroke-dashoffset: 500;
+    }
 }
 text.bldglabel {
-    font-family: Dense;
+    font-family: UbuntuL;
     fill: #fff;
     opacity: 1;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .ground {
     fill: #111;
@@ -104,7 +105,7 @@ polyline.buildingpath {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-      animation-direction: reverse;
+    animation-direction: reverse;
 }
 polyline.gatepath {
     fill: none;
@@ -115,12 +116,11 @@ polyline.gatepath {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-      animation-direction: reverse;
+    animation-direction: reverse;
 }
 
 @keyframes path {
-  to {
-    stroke-dashoffset: 500;
-  }
+    to {
+        stroke-dashoffset: 500;
+    }
 }
-
