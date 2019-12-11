@@ -1,6 +1,4 @@
 # InteractiveSvgMap
-An Interactive SVG Map parsed from JSON files
-
 This is a framework that can generate an interactive SVG map by loading data points from JSON-formatted files.
 
 <h2>Map Data Files</h2>
