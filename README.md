@@ -1,5 +1,5 @@
 # InteractiveSvgMap
-An <a href="https://slu-map.000webhostapp.com/">Interactive SVG Map</a> parsed from JSON files
+An Interactive SVG Map parsed from JSON files
 
 This is a framework that can generate an interactive SVG map by loading data points from JSON-formatted files.
 
