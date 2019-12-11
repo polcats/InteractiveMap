@@ -20,7 +20,7 @@ It was later on converted to the generalized map structure types in JSON format.
     <li>Map Data</li>
 </ul>
 
-<p>The rest were created by using the <a href="https://github.com/polcats/SVGMapPathFinder">PathFinder</a>:</p>
+<p>The rest were created by using the <a href="https://github.com/polcats/SVGMapPathGenerator">SVGMapPathGenerator</a>:</p>
 <ul>
     <li>Entry/Exit</li>
     <li>Paths</li>
