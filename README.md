@@ -51,3 +51,10 @@ It was later on converted to the generalized map structure types in JSON format.
 <li>Paul Catalan</li>
 </ul>
 
+<h2>Target Changes</h2>
+<p>This was originally a college project. The requirements involved not using any libraries or frameworks. <br> The following targets aim to improve the current implementation:</p>
+<ul>
+<li>[ ] Refactor JS codes</li>
+<li>[ ] Update codes by adding jQuery</li>
+<li>[ ] Update UI by using a responsive CSS Framework</li>
+</ul>
