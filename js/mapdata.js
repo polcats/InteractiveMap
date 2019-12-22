@@ -80,6 +80,7 @@ function generateGates(gatesArray) {
     }
 }
 
+var mainSVG = 'map';
 function generateLabels(array) {
     var beforepoints = document.getElementsByClassName('entrypoint')[0];
     for (y = 0; y < array.length; y++) {
@@ -101,7 +102,6 @@ function generateLabels(array) {
     }
 }
 
-var mainSVG = 'map';
 function generateEntries(array) {
     for (v = 0; v < array.length; v++) {
         var rad = '5';
