@@ -1,9 +1,9 @@
 function setUp(q, response) {
-    var setup = document.getElementById("setup");
+    let setup = document.getElementById("setup");
     setup.innerHTML = "";
 
     if (q == "0" && response == "1") {
-        var q1 = "Are you familiar with the premises of Saint Louis University?";
+        let q1 = "Are you familiar with the premises of Saint Louis University?";
         setup.innerHTML =
             "<div class='q'><h1> " +
             q1 +
@@ -11,7 +11,7 @@ function setUp(q, response) {
             "<input type='button' value='Yes' onclick='setUp(1, 1)' />" +
             "<input type='button' value='No' onclick='setUp(1, 0)' /></div>";
     } else if (q == "1" && response == "0") {
-        var q2 = "Would you like to undergo a guiding stage to go to your first destination building?";
+        let q2 = "Would you like to undergo a guiding stage to go to your first destination building?";
         setup.innerHTML =
             "<div class='q'><h1> " +
             q2 +
@@ -19,7 +19,7 @@ function setUp(q, response) {
             "<input type='button' value='Yes' onclick='setUp(2, 1)' />" +
             "<input type='button' value='No' onclick='setUp(2, 0)' /></div>";
     } else if (q == "1" && response == "1") {
-        var q2 = " Would you still like to undergo a guiding stage to go to a building?";
+        let q2 = " Would you still like to undergo a guiding stage to go to a building?";
         setup.innerHTML =
             "<div class='q'><h1> " +
             q2 +
@@ -27,7 +27,7 @@ function setUp(q, response) {
             "<input type='button' value='Yes' onclick='setUp(2, 1)' />" +
             "<input type='button' value='No' onclick='setUp(2, 0)' /></div>";
     } else if (q == "2" && response == "0") {
-        var a1 = "Alright, please reload the page to see the map.";
+        let a1 = "Alright, please reload the page to see the map.";
         setup.innerHTML =
             "<div class='q'><h1> " +
             a1 +
@@ -35,7 +35,7 @@ function setUp(q, response) {
             "<input type='button' value='Reload' onclick='window.location.reload(); saveInitialSettings(true);' />";
         localStorage.setItem("setupdone", "true");
     } else if (q == "2" && response == "1") {
-        var q3 = "Are you already inside the campus?";
+        let q3 = "Are you already inside the campus?";
         setup.innerHTML =
             "<div class='q'><h1> " +
             q3 +
@@ -43,13 +43,13 @@ function setUp(q, response) {
             "<input type='button' value='Yes' onclick='setUp(3, 1)' />" +
             "<input type='button' value='No' onclick='setUp(3, 0)' /></div>";
     } else if (q == "3" && response == "0") {
-        var q4 = "Please choose which gate you are going to enter from";
+        let q4 = "Please choose which gate you are going to enter from";
         setup.innerHTML = "<h1> " + q4 + " </h1>" + document.getElementById("gateselection").innerHTML;
     } else if (q == "3" && response == "1") {
-        var q5 = "Please choose which gate you entered from";
+        let q5 = "Please choose which gate you entered from";
         setup.innerHTML = "<h1> " + q5 + " </h1>" + document.getElementById("gateselection").innerHTML;
     } else if (q == "4" && response == "1") {
-        var a2 = "Your settings has been saved. Click any building in the map to see the path.";
+        let a2 = "Your settings has been saved. Click any building in the map to see the path.";
         setup.innerHTML =
             "<div class='q'><h1> " +
             a2 +
