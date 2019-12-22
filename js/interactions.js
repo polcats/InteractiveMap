@@ -86,14 +86,14 @@ var building = "";
 
 // the actions of the three modes are controlled by this function
 function doActivity(destinationName, detailID) {
-    var array = Paths["Paths"];
-    var beforepoints = document.getElementsByClassName("point")[0];
+    let array = Paths["Paths"];
+    let beforepoints = document.getElementsByClassName("point")[0];
 
     // removes previous paths
     try {
-        var poly = document.getElementsByClassName("buildingpath");
-        for (s = 0; s < poly.length; s++) {
-            poly[s].parentNode.removeChild(poly[s]);
+        let poly = document.getElementsByClassName("buildingpath");
+        for (let i = 0; i < poly.length; ++i) {
+            poly[i].parentNode.removeChild(poly[i]);
         }
     } catch (e) {}
 
@@ -131,32 +131,30 @@ function doActivity(destinationName, detailID) {
     // Mode: Building Details
     if (showdetailsactive) {
         //show details
-        var detailBox = document.getElementById("details");
-        var buildingName = MapData["Structures"][detailID].displayname;
-        var desc = MapData["Structures"][detailID].description;
-        var notes = MapData["Structures"][detailID].text;
+        let detailBox = document.getElementById("details");
+        let buildingName = MapData["Structures"][detailID].displayname;
         detailBox.childNodes[1].innerHTML = '<span class="building">' + buildingName + "</span>";
-
         document.getElementById("content").setAttribute("style", "display: none;");
 
-        // notes
+        // notes and description
+        let desc = MapData["Structures"][detailID].description;
+        let notes = MapData["Structures"][detailID].text;
         document.getElementById("textcontainer").childNodes[1].value = notes;
-        // description
         document.getElementById("textcontainer").childNodes[3].value = desc;
 
         document.getElementById("textcontainer").setAttribute("style", "display: block");
         detailBox.setAttribute("style", "display: block");
         currentBuildingIndex = detailID;
 
-        return false; // terminate the function here
+        return false;
     }
 
     // Mode: Gate-to-Building Paths
     if (showBuildingPathsActive) {
         building = destinationName;
-        for (v = 0; v < array.length; v++) {
-            var pair = array[v].pair;
-            var direction = "";
+        for (let i = 0; i < array.length; ++i) {
+            let pair = array[i].pair;
+            let direction = "";
             if (pair.indexOf(gate) >= 0 && pair.indexOf(building) >= 0) {
                 if (pair.indexOf(gate) < pair.indexOf(building)) {
                     // default
@@ -164,19 +162,20 @@ function doActivity(destinationName, detailID) {
                 } else {
                     direction = "normal";
                 }
-                var element =
+
+                let element =
                     '<polyline style="animation-direction:' +
                     direction +
                     ';" points="' +
-                    array[v].points +
+                    array[i].points +
                     '" name="' +
-                    array[v].pair +
+                    array[i].pair +
                     '" class="gatepath"></polyline>';
                 document.getElementById(mainSVG).insertBefore(parseSVG(element), beforepoints);
             }
         }
 
-        return false; //terminate the function here
+        return false;
     }
 
     // Mode: Building-to-Building Paths
@@ -187,6 +186,7 @@ function doActivity(destinationName, detailID) {
     try {
         document.getElementById(b1).setAttribute("class", "Building selected");
     } catch (e) {}
+
     try {
         document.getElementById(b2).setAttribute("class", "Building selected");
     } catch (e) {}
@@ -205,12 +205,12 @@ function doActivity(destinationName, detailID) {
         b2 = "Initial2";
     }
 
-    for (n = 0; n < array.length; n++) {
-        var pair = array[n].pair;
-        var direction = "";
+    for (let i = 0; i < array.length; ++i) {
+        let pair = array[i].pair;
+        let direction = "";
 
         // alternates disabled in if-statement
-        if (pair.indexOf(b1) >= 0 && pair.indexOf(b2) >= 0 && b1 !== b2 && !showBuildingPathsActive && array[n].type != "alternate") {
+        if (pair.indexOf(b1) >= 0 && pair.indexOf(b2) >= 0 && b1 !== b2 && !showBuildingPathsActive && array[i].type != "alternate") {
             // check path animation direction
             // if animation direction is wrong, just interchange the order of the pair buildings in the json file
             if (pair.indexOf(b1) < pair.indexOf(b2)) {
@@ -221,13 +221,13 @@ function doActivity(destinationName, detailID) {
             }
 
             // path of b-2-b
-            var element =
+            let element =
                 '<polyline style="animation-direction:' +
                 direction +
                 ';" points="' +
-                array[n].points +
+                array[i].points +
                 '" name="' +
-                array[n].pair +
+                array[i].pair +
                 '" class="buildingpath"></polyline>';
             document.getElementById(mainSVG).insertBefore(parseSVG(element), beforepoints);
         }
