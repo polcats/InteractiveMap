@@ -15,7 +15,7 @@ function loadDataFromLS(localID) {
 let dataSources = ["MapData", "Entries", "Paths", "PointsOfInterest", "Labels"];
 let onlineMode = false;
 if (!onlineMode) {
-    for (i = 0; i < dataSources.length; ++i) {
+    for (let i = 0; i < dataSources.length; ++i) {
         storeDataInLS(dataSources[i]);
     }
 }
@@ -27,7 +27,9 @@ function parseSVG(s) {
     let div = document.createElementNS("http://www.w3.org/1999/xhtml", "div");
     div.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg">' + s + "</svg>";
     let frag = document.createDocumentFragment();
-    while (div.firstChild.firstChild) frag.appendChild(div.firstChild.firstChild);
+    while (div.firstChild.firstChild) {
+        frag.appendChild(div.firstChild.firstChild);
+    }
     return frag;
 }
 
@@ -45,40 +47,37 @@ function generateFilters(buildingsArray, floorsArray, roomsArray) {
     let rmSelect = document.getElementById("filterroom");
 
     // buildings
-    for (z = 0; z < buildingsArray.length; z++) {
+    for (let i = 0; i < buildingsArray.length; ++i) {
         let option = document.createElement("option");
-        option.setAttribute("value", buildingsArray[z].keyword);
-        option.innerHTML = buildingsArray[z].display;
+        option.setAttribute("value", buildingsArray[i].keyword);
+        option.innerHTML = buildingsArray[i].display;
         //console.log(option);
         bldgSelect.appendChild(option);
     }
 
     // floors
-    for (x = 0; x < floorsArray.length; x++) {
+    for (let i = 0; i < floorsArray.length; ++i) {
         let option = document.createElement("option");
-        option.setAttribute("value", floorsArray[x].keyword);
-        option.innerHTML = floorsArray[x].display;
-        //console.log(option);
+        option.setAttribute("value", floorsArray[i].keyword);
+        option.innerHTML = floorsArray[i].display;
         flrSelect.appendChild(option);
     }
 
     // rooms
-    for (c = 0; c < roomsArray.length; c++) {
+    for (let i = 0; i < roomsArray.length; ++i) {
         let option = document.createElement("option");
-        option.setAttribute("value", roomsArray[c].keyword);
-        option.innerHTML = roomsArray[c].display;
-        //console.log(option);
+        option.setAttribute("value", roomsArray[i].keyword);
+        option.innerHTML = roomsArray[i].display;
         rmSelect.appendChild(option);
     }
 }
 
 function generateGates(gatesArray) {
     let gatesSelect = document.getElementById("gates");
-    for (e = 0; e < gatesArray.length; e++) {
+    for (let i = 0; i < gatesArray.length; ++i) {
         let option = document.createElement("option");
-        option.setAttribute("value", gatesArray[e].keyword);
-        option.innerHTML = gatesArray[e].display;
-        //console.log(option);
+        option.setAttribute("value", gatesArray[i].keyword);
+        option.innerHTML = gatesArray[i].display;
         gatesSelect.appendChild(option);
     }
 }
@@ -86,54 +85,54 @@ function generateGates(gatesArray) {
 let mainSVG = "map";
 function generateLabels(array) {
     let beforepoints = document.getElementsByClassName("entrypoint")[0];
-    for (y = 0; y < array.length; y++) {
+    for (let i = 0; i < array.length; ++i) {
         let element =
             '<text x="' +
-            array[y].x +
+            array[i].x +
             '" y="' +
-            array[y].y +
+            array[i].y +
             '"' +
             "onclick=\"doActivity('" +
-            array[y].for.split(", ")[0] +
+            array[i].for.split(", ")[0] +
             "','" +
-            array[y].for.split(", ")[1] +
+            array[i].for.split(", ")[1] +
             "');\"" +
             '" class="bldglabel">' +
-            array[y].name +
+            array[i].name +
             "</text>";
         document.getElementById(mainSVG).insertBefore(parseSVG(element), beforepoints);
     }
 }
 
 function generateEntries(array) {
-    for (v = 0; v < array.length; v++) {
+    for (let i = 0; i < array.length; ++i) {
         let rad = "5";
         let element =
             '<a class="entrypoint"><circle id="' +
-            array[v]["name"] +
+            array[i]["name"] +
             '" cx="' +
-            array[v]["x"] +
+            array[i]["x"] +
             '" cy="' +
-            array[v]["y"] +
+            array[i]["y"] +
             '" r="' +
             rad +
             '"  onclick="pointOfEntryDetails(\'' +
-            array[v]["name"] +
+            array[i]["name"] +
             "', ' " +
-            array[v]["location"] +
+            array[i]["location"] +
             '\')" name="' +
-            array[v]["location"] +
+            array[i]["location"] +
             '" /></a>';
         document.getElementById(mainSVG).appendChild(parseSVG(element));
     }
 }
 
 function generatePointsOfInterests(array) {
-    for (v = 0; v < array.length; v++) {
-        let arr = array[v]; // this is the general array of the poi json
+    for (let i = 0; i < array.length; ++i) {
+        let arr = array[i]; // this is the general array of the poi json
         if (arr.floor instanceof Array && arr.type == "multiple_similar") {
             // for the multiple typed entries in the json file
-            for (j = 0; j < arr.floor.length; j++) {
+            for (let j = 0; j < arr.floor.length; ++j) {
                 let innerArr = arr.floor[j];
                 let element =
                     '<a class="interestpoint ' +
@@ -151,7 +150,7 @@ function generatePointsOfInterests(array) {
                     '" cy="' +
                     arr.y +
                     '" onclick="pointOfInterestDetails(' +
-                    v +
+                    i +
                     ", " +
                     j +
                     ');" class="' +
@@ -161,7 +160,7 @@ function generatePointsOfInterests(array) {
             }
         } else if (arr.floor instanceof Array && arr.type == "multiple") {
             // for the multiple typed entries in the json file
-            for (j = 0; j < arr.floor.length; j++) {
+            for (let j = 0; j < arr.floor.length; ++j) {
                 let innerArr = arr.floor[j];
                 let element =
                     '<a class="interestpoint ' +
@@ -179,7 +178,7 @@ function generatePointsOfInterests(array) {
                     '" cy="' +
                     arr.y +
                     '" onclick="pointOfInterestDetails(' +
-                    v +
+                    i +
                     ", " +
                     j +
                     ');" class="' +
@@ -205,7 +204,7 @@ function generatePointsOfInterests(array) {
                 '" cy="' +
                 arr.y +
                 '" onclick="pointOfInterestDetails(' +
-                v +
+                i +
                 ');" class="' +
                 arr.class +
                 '" /></a>';
@@ -215,73 +214,73 @@ function generatePointsOfInterests(array) {
 }
 
 function generateStructures(array) {
-    for (f = 0; f < array.length; f++) {
+    for (let i = 0; i < array.length; ++i) {
         let event = "";
-        if (array[f].class.match(/building/gi)) {
-            event = "onclick=\"doActivity('" + array[f].name + "','" + f + "')\"";
+        if (array[i].class.match(/building/gi)) {
+            event = "onclick=\"doActivity('" + array[i].name + "','" + i + "')\"";
         }
 
-        if (array[f].type.match(/polygon/g)) {
+        if (array[i].type.match(/polygon/g)) {
             let element =
                 '<polygon class="' +
-                array[f]["class"] +
+                array[i]["class"] +
                 '" id="' +
-                array[f]["name"] +
+                array[i]["name"] +
                 '" points="' +
-                array[f]["points"] +
+                array[i]["points"] +
                 '" ' +
                 event +
                 "></polygon>";
 
             document.getElementById(mainSVG).appendChild(parseSVG(element));
-        } else if (array[f].type.match(/ellipse/g)) {
+        } else if (array[i].type.match(/ellipse/g)) {
             let element =
                 '<ellipse class="' +
-                array[f]["class"] +
+                array[i]["class"] +
                 '" id="' +
-                array[f]["name"] +
+                array[i]["name"] +
                 '" cx="' +
-                array[f]["cx"] +
+                array[i]["cx"] +
                 '" cy="' +
-                array[f]["cy"] +
+                array[i]["cy"] +
                 '" rx="' +
-                array[f]["rx"] +
+                array[i]["rx"] +
                 '" ry="' +
-                array[f]["ry"] +
+                array[i]["ry"] +
                 '" transform="' +
-                array[f]["transform"] +
+                array[i]["transform"] +
                 '" />';
             document.getElementById(mainSVG).appendChild(parseSVG(element));
-        } else if (array[f].type.match(/path/g)) {
+        } else if (array[i].type.match(/path/g)) {
             let element =
                 '<path class="' +
-                array[f]["class"] +
+                array[i]["class"] +
                 '" id="' +
-                array[f]["name"] +
+                array[i]["name"] +
                 '" d="' +
-                array[f]["d"] +
+                array[i]["d"] +
                 '" class="' +
-                array[f]["class"] +
+                array[i]["class"] +
                 '" ' +
                 event +
                 "/>";
             document.getElementById(mainSVG).appendChild(parseSVG(element));
-        } else if (array[f].type.match(/line/g)) {
+        } else if (array[i].type.match(/line/g)) {
             let element =
                 '<line class="' +
-                array[f]["class"] +
+                array[i]["class"] +
                 '" id="' +
-                array[f]["name"] +
+                array[i]["name"] +
                 '" x1="' +
-                array[f]["x1"] +
+                array[i]["x1"] +
                 '" x2="' +
-                array[f]["x2"] +
+                array[i]["x2"] +
                 '" y1="' +
-                array[f]["y1"] +
+                array[i]["y1"] +
                 '" y2="' +
-                array[f]["y2"] +
+                array[i]["y2"] +
                 '" class="' +
-                array[f]["class"] +
+                array[i]["class"] +
                 '"/>';
             document.getElementById(mainSVG).appendChild(parseSVG(element));
         }
