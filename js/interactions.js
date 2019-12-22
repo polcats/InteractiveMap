@@ -241,9 +241,10 @@ var showBuildingPathsActive = false;
 
 // function used when switching modes
 function switchActiveMode(num) {
-    var select = document.getElementById("active");
-    var status = select.options[select.selectedIndex].value;
+    let select = document.getElementById("active");
+    let status = select.options[select.selectedIndex].value;
     document.getElementById("gates").setAttribute("disabled", "disabled");
+
     if (status == "0") {
         showpathsactive = true;
         showdetailsactive = false;
@@ -262,7 +263,7 @@ function switchActiveMode(num) {
 
 // function used when switching gates [in gate-to-building mode]
 function changeGate() {
-    var select = document.getElementById("gates");
+    let select = document.getElementById("gates");
     gate = select.options[select.selectedIndex].value;
 }
 
