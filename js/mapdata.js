@@ -1,7 +1,6 @@
 function storeDataInLS(localID) {
     if (localStorage.getItem(localID) == undefined) {
-        eval('var string = JSON.stringify(' + localID + ')');
-        localStorage.setItem(localID, string);
+        localStorage.setItem(localID, JSON.stringify(localID));
     }
 }
 
