@@ -389,24 +389,21 @@ var roomFilter = 0;
 // function used to filter the points of interests
 function filterPoints() {
     // rehide/hide all
-    var allPoints = document.getElementsByClassName("interestpoint");
-    for (u = 0; u < allPoints.length; u++) {
-        allPoints[u].removeAttribute("style");
+    let allPoints = document.getElementsByClassName("interestpoint");
+    for (let i = 0; i < allPoints.length; ++i) {
+        allPoints[i].removeAttribute("style");
     }
-
-    //if(interestPoints) {
-    //}
 
     if (!interestPoints) {
         // hide all if points are disabled
-        var allPoints = document.getElementsByClassName("interestpoint");
-        for (u = 0; u < allPoints.length; u++) {
+        allPoints = document.getElementsByClassName("interestpoint");
+        for (let i = 0; i < allPoints.length; ++i) {
             // rehide/hide all
             allPoints[u].removeAttribute("style");
         }
     } else {
         // show filtered points
-        var filterClass =
+        let filterClass =
             "interestpoint " +
             PointsOfInterest["BuildingFilters"][buildingFilter].keyword +
             " " +
@@ -414,10 +411,10 @@ function filterPoints() {
             " " +
             PointsOfInterest["RoomFilters"][roomFilter].keyword;
 
-        var selected = document.getElementsByClassName(filterClass);
-        for (u = 0; u < selected.length; u++) {
+        let selected = document.getElementsByClassName(filterClass);
+        for (let i = 0; i < selected.length; ++i) {
             // show selected by filter all
-            selected[u].setAttribute("style", "display: block");
+            selected[i].setAttribute("style", "display: block");
         }
     }
 }
