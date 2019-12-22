@@ -63,8 +63,9 @@ var currentBuildingIndex = null;
 function notes(action) {
     if (action == 1) {
         // assign the map data to newData
-        var newData = MapData;
+        let newData = MapData;
 
+        // TO DO: Sanitize user input. But yea only them will be affected.
         // modify the property with the text input by the user
         newData["Structures"][currentBuildingIndex].text = document.getElementById("text").value;
 
@@ -72,8 +73,8 @@ function notes(action) {
         localStorage.setItem("MapData", JSON.stringify(newData));
 
         // load new data
-        var newMapObj = localStorage.getItem("MapData");
-        var parsedNewObj = JSON.parse(newMapObj);
+        let newMapObj = localStorage.getItem("MapData");
+        let parsedNewObj = JSON.parse(newMapObj);
         data = parsedNewObj;
     }
 }
