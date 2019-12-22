@@ -419,8 +419,8 @@ function filterPoints() {
     }
 }
 
-var currentZoom = 100;
 // function used to zoom in/out the map
+var currentZoom = 100;
 function magnify(action) {
     var zoomLevelText = document.getElementById("zoom");
 
@@ -455,18 +455,18 @@ function showSettings() {
 }
 
 function saveSettings() {
-    var mode = document.getElementById("active");
-    var gate = document.getElementById("gates");
-    var entry = document.getElementById("entry");
-    var filter = document.getElementById("filter");
+    let mode = document.getElementById("active");
+    let gate = document.getElementById("gates");
+    let entry = document.getElementById("entry");
+    let filter = document.getElementById("filter");
 
     changeEntryPointDisplayStatus();
 
     // filter the points after saving the settings
     filterPoints();
 
-    var zoom = currentZoom;
-    var settings =
+    let zoom = currentZoom;
+    let settings =
         '{ "Settings":{ "mode":"' +
         mode.selectedIndex +
         '", "gate":"' +
@@ -492,7 +492,7 @@ function saveSettings() {
 }
 
 function loadSettings() {
-    var settings = "";
+    let settings = "";
     try {
         // try to load settings if found in LS
         try {
