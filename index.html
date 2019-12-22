@@ -33,8 +33,10 @@
         <script type="text/javascript" src="js/interactions.js"></script>
         <script type="text/javascript" src="js/mapdata.js"></script>
         <script type="text/javascript">
-            for (i = 0; i < dataSources.length; ++i) {
-                loadDataFromLS(dataSources[0]);
+            if (!onlineMode) {
+                for (i = 0; i < dataSources.length; ++i) {
+                    loadDataFromLS(dataSources[0]);
+                }
             }
         </script>
     </head>

@@ -12,8 +12,11 @@ function loadDataFromLS(localID) {
 }
 
 let dataSources = ["MapData", "Entries", "Paths", "PointsOfInterest", "Labels"];
-for (i = 0; i < dataSources.length; ++i) {
-    storeDataInLS(dataSources[i]);
+let onlineMode = true;
+if (!onlineMode) {
+    for (i = 0; i < dataSources.length; ++i) {
+        storeDataInLS(dataSources[i]);
+    }
 }
 
 // this is used to parse svgs
