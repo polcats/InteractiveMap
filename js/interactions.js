@@ -54,7 +54,7 @@ function setUp(q, response) {
             "<div class='q'><h1> " +
             a2 +
             " </h1>" +
-            "<input type='button' value='See Map' onclick='window.location.reload();saveInitialSettings(false);' />";
+            "<input type='button' value='See Map' onclick='window.location.reload(); saveInitialSettings(false);' />";
         localStorage.setItem("setupdone", "true");
     }
 }

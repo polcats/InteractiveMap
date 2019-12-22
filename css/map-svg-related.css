@@ -14,6 +14,7 @@ circle {
     stroke: #0fb8ad;
     stroke-width: 2px;
 }
+
 circle.currentpoint {
     fill: #9acd32;
     r: 5px;
@@ -24,9 +25,11 @@ circle.currentpoint {
     animation-iteration-count: infinite;
     z-index: 100;
 }
+
 a.interestpoint {
     display: none;
 }
+
 a.interestpoint circle {
     cursor: pointer;
     fill: #fff;
@@ -34,17 +37,20 @@ a.interestpoint circle {
     stroke: #000;
     stroke-width: 1px;
 }
+
 a.interestpoint circle.CR {
     fill: orange;
     r: 4px;
     stroke: #fff;
     stroke-width: 1px;
 }
+
 @keyframes dash {
     to {
         stroke-dashoffset: 500;
     }
 }
+
 text.bldglabel {
     font-family: UbuntuL;
     fill: #fff;
@@ -53,9 +59,11 @@ text.bldglabel {
     font-size: 1rem;
     font-weight: bold;
 }
+
 .ground {
     fill: #111;
 }
+
 .Building {
     fill: #618685;
     stroke: #fff;
@@ -63,35 +71,44 @@ text.bldglabel {
     cursor: pointer;
     transition: all ease 1s;
 }
+
 .Building.selected {
     fill: #3b3a30;
     stroke: #9acd32;
     stroke-width: 5px;
 }
+
 polygon.disabled {
     stroke: #fff;
     stroke-width: 1.5px;
 }
+
 .pathway {
     fill: #333;
 }
+
 .outdoor_stairs {
     fill: #666;
 }
+
 .shaded {
     fill: #3b3a30;
 }
+
 .darkened {
     fill: #999;
 }
+
 .edgestructure {
     stroke: #fff;
     stroke-width: 1.5px;
     fill: none;
 }
+
 .fountain {
     fill: #ddd; /*6FA8DC*/
 }
+
 .fountain_grounds {
     fill: #ddd; /*71C671*/
 }
@@ -107,6 +124,7 @@ polyline.buildingpath {
     animation-timing-function: linear;
     animation-direction: reverse;
 }
+
 polyline.gatepath {
     fill: none;
     stroke: #fff;
