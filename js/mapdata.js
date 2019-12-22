@@ -1,6 +1,7 @@
 function storeDataInLS(localID) {
+    eval("var temp = JSON.stringify(" + localID + ")");
     if (localStorage.getItem(localID) == undefined) {
-        localStorage.setItem(localID, JSON.stringify(localID));
+        localStorage.setItem(localID, temp);
     }
 }
 
@@ -12,7 +13,7 @@ function loadDataFromLS(localID) {
 }
 
 let dataSources = ["MapData", "Entries", "Paths", "PointsOfInterest", "Labels"];
-let onlineMode = true;
+let onlineMode = false;
 if (!onlineMode) {
     for (i = 0; i < dataSources.length; ++i) {
         storeDataInLS(dataSources[i]);
