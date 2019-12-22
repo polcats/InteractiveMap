@@ -23,10 +23,12 @@
                 initial.Settings.bfilter = "0";
                 initial.Settings.ffilter = "0";
                 initial.Settings.rfilter = "0";
+
                 if (!state) {
                     initial.Settings.mode = "1";
                     initial.Settings.gate = "" + setgate;
                 }
+
                 localStorage.setItem("settings", JSON.stringify(initial));
             }
         </script>
@@ -34,7 +36,7 @@
         <script type="text/javascript" src="js/mapdata.js"></script>
         <script type="text/javascript">
             if (!onlineMode) {
-                for (i = 0; i < dataSources.length; ++i) {
+                for (let i = 0; i < dataSources.length; ++i) {
                     loadDataFromLS(dataSources[0]);
                 }
             }
@@ -44,7 +46,7 @@
     <body>
         <script type="text/javascript">
             if (localStorage.getItem("setupdone") != undefined) {
-                var style = document.createElement("style");
+                let style = document.createElement("style");
                 style.innerText = "html body div#setup {display: none };";
                 document.getElementsByTagName("head")[0].appendChild(style);
                 document.getElementsByTagName("body")[0].setAttribute("style", "overflow: visible;");
