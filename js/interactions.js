@@ -335,30 +335,30 @@ function entryPointsInteraction() {
 function pointOfInterestDetails(num, arrayIndex) {
     resetElements();
 
-    var content = "";
-    var obj = PointsOfInterest["Points"][num];
+    let content = "";
+    let obj = PointsOfInterest["Points"][num];
 
     if (obj.type == "multiple" || obj.type == "multiple_similar") {
         // multi entries (array type)
-        var innerFloor = obj.floor[arrayIndex];
+        let innerFloor = obj.floor[arrayIndex];
         content += "<h3>" + innerFloor.floor + " Floor</h3>";
 
-        var nameContent = innerFloor.name;
-        var newText = "";
+        let nameContent = innerFloor.name;
+        let newText = "";
 
         if (nameContent.indexOf("|") >= 0) {
             // multiple items in the same floor
             newText = nameContent.split("|");
-            for (c = 0; c < newText.length; c++) {
-                content += "<p class='list'>" + newText[c] + "</p>";
+            for (let i = 0; i < newText.length; ++i) {
+                content += "<p class='list'>" + newText[i] + "</p>";
             }
         } else {
             content += "<p id='pointName'>" + nameContent + "</p>";
         }
     } else {
         // single item in one point
-        var nameContent = obj.pointname;
-        var newText = "";
+        let nameContent = obj.pointname;
+        let newText = "";
 
         // header
         content += "<h3>" + obj.floor + " Floor</h3>";
@@ -366,8 +366,8 @@ function pointOfInterestDetails(num, arrayIndex) {
         if (nameContent.indexOf("|") >= 0) {
             // multiple items in the same floor
             newText = nameContent.split("|");
-            for (c = 0; c < newText.length; c++) {
-                content += "<p class='list'>" + newText[c] + "</p>";
+            for (let i = 0; i < newText.length; ++i) {
+                content += "<p class='list'>" + newText[i] + "</p>";
             }
         } else {
             content += "<p id='pointName'>" + nameContent + "</p>";
