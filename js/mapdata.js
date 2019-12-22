@@ -52,7 +52,6 @@ function generateFilters(buildingsArray, floorsArray, roomsArray) {
         let option = document.createElement("option");
         option.setAttribute("value", buildingsArray[i].keyword);
         option.innerHTML = buildingsArray[i].display;
-        //console.log(option);
         bldgSelect.appendChild(option);
     }
 

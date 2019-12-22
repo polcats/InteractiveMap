@@ -413,7 +413,7 @@ function filterPoints() {
             PointsOfInterest["FloorFilters"][floorFilter].keyword +
             " " +
             PointsOfInterest["RoomFilters"][roomFilter].keyword;
-        //console.log(filterClass);
+
         var selected = document.getElementsByClassName(filterClass);
         for (u = 0; u < selected.length; u++) {
             // show selected by filter all
@@ -505,7 +505,6 @@ function loadSettings() {
         } catch (e) {
             settings = localStorage.getItem("settings");
             settings = JSON.parse(settings);
-            console.log(e);
         }
 
         // load the previous mode
@@ -558,6 +557,5 @@ function loadSettings() {
         magnify("do nothing");
     } catch (e) {
         // no saved settings yet
-        console.log(e);
     }
 }
