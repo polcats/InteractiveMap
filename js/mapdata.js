@@ -7,12 +7,12 @@ function storeDataInLS(localID) {
 
 function loadDataFromLS(localID) {
     localData = localStorage.getItem(localID);
-    if (localData != 'undefined') {
-        eval(localID + ' = ' + localData);
+    if (localData != "undefined") {
+        eval(localID + " = " + localData);
     }
 }
 
-var dataSources = ['MapData', 'Entries', 'Paths', 'PointsOfInterest', 'Labels'];
+let dataSources = ["MapData", "Entries", "Paths", "PointsOfInterest", "Labels"];
 for (i = 0; i < dataSources.length; ++i) {
     storeDataInLS(dataSources[i]);
 }
@@ -21,30 +21,30 @@ for (i = 0; i < dataSources.length; ++i) {
 // directly appending them to html elements will work but they will not be rendered
 // we use a different namespace
 function parseSVG(s) {
-    var div = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
-    div.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg">' + s + '</svg>';
-    var frag = document.createDocumentFragment();
+    let div = document.createElementNS("http://www.w3.org/1999/xhtml", "div");
+    div.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg">' + s + "</svg>";
+    let frag = document.createDocumentFragment();
     while (div.firstChild.firstChild) frag.appendChild(div.firstChild.firstChild);
     return frag;
 }
 
 // just resizes the svg code in the index.html based on the map json file
 function initializeMainSVG(width, height, id, parentId) {
-    var svg = document.getElementById(id);
-    svg.setAttribute('width', width);
-    svg.setAttribute('height', height);
-    svg.setAttribute('viewbox', '0 0 ' + width + ' ' + height);
+    let svg = document.getElementById(id);
+    svg.setAttribute("width", width);
+    svg.setAttribute("height", height);
+    svg.setAttribute("viewbox", "0 0 " + width + " " + height);
 }
 
 function generateFilters(buildingsArray, floorsArray, roomsArray) {
-    var bldgSelect = document.getElementById('filterbldg');
-    var flrSelect = document.getElementById('filterfloor');
-    var rmSelect = document.getElementById('filterroom');
+    let bldgSelect = document.getElementById("filterbldg");
+    let flrSelect = document.getElementById("filterfloor");
+    let rmSelect = document.getElementById("filterroom");
 
     // buildings
     for (z = 0; z < buildingsArray.length; z++) {
-        var option = document.createElement('option');
-        option.setAttribute('value', buildingsArray[z].keyword);
+        let option = document.createElement("option");
+        option.setAttribute("value", buildingsArray[z].keyword);
         option.innerHTML = buildingsArray[z].display;
         //console.log(option);
         bldgSelect.appendChild(option);
@@ -52,8 +52,8 @@ function generateFilters(buildingsArray, floorsArray, roomsArray) {
 
     // floors
     for (x = 0; x < floorsArray.length; x++) {
-        var option = document.createElement('option');
-        option.setAttribute('value', floorsArray[x].keyword);
+        let option = document.createElement("option");
+        option.setAttribute("value", floorsArray[x].keyword);
         option.innerHTML = floorsArray[x].display;
         //console.log(option);
         flrSelect.appendChild(option);
@@ -61,8 +61,8 @@ function generateFilters(buildingsArray, floorsArray, roomsArray) {
 
     // rooms
     for (c = 0; c < roomsArray.length; c++) {
-        var option = document.createElement('option');
-        option.setAttribute('value', roomsArray[c].keyword);
+        let option = document.createElement("option");
+        option.setAttribute("value", roomsArray[c].keyword);
         option.innerHTML = roomsArray[c].display;
         //console.log(option);
         rmSelect.appendChild(option);
@@ -70,56 +70,56 @@ function generateFilters(buildingsArray, floorsArray, roomsArray) {
 }
 
 function generateGates(gatesArray) {
-    var gatesSelect = document.getElementById('gates');
+    let gatesSelect = document.getElementById("gates");
     for (e = 0; e < gatesArray.length; e++) {
-        var option = document.createElement('option');
-        option.setAttribute('value', gatesArray[e].keyword);
+        let option = document.createElement("option");
+        option.setAttribute("value", gatesArray[e].keyword);
         option.innerHTML = gatesArray[e].display;
         //console.log(option);
         gatesSelect.appendChild(option);
     }
 }
 
-var mainSVG = 'map';
+let mainSVG = "map";
 function generateLabels(array) {
-    var beforepoints = document.getElementsByClassName('entrypoint')[0];
+    let beforepoints = document.getElementsByClassName("entrypoint")[0];
     for (y = 0; y < array.length; y++) {
-        var element =
+        let element =
             '<text x="' +
             array[y].x +
             '" y="' +
             array[y].y +
             '"' +
-            'onclick="doActivity(\'' +
-            array[y].for.split(', ')[0] +
+            "onclick=\"doActivity('" +
+            array[y].for.split(", ")[0] +
             "','" +
-            array[y].for.split(', ')[1] +
-            '\');"' +
+            array[y].for.split(", ")[1] +
+            "');\"" +
             '" class="bldglabel">' +
             array[y].name +
-            '</text>';
+            "</text>";
         document.getElementById(mainSVG).insertBefore(parseSVG(element), beforepoints);
     }
 }
 
 function generateEntries(array) {
     for (v = 0; v < array.length; v++) {
-        var rad = '5';
-        var element =
+        let rad = "5";
+        let element =
             '<a class="entrypoint"><circle id="' +
-            array[v]['name'] +
+            array[v]["name"] +
             '" cx="' +
-            array[v]['x'] +
+            array[v]["x"] +
             '" cy="' +
-            array[v]['y'] +
+            array[v]["y"] +
             '" r="' +
             rad +
             '"  onclick="pointOfEntryDetails(\'' +
-            array[v]['name'] +
+            array[v]["name"] +
             "', ' " +
-            array[v]['location'] +
+            array[v]["location"] +
             '\')" name="' +
-            array[v]['location'] +
+            array[v]["location"] +
             '" /></a>';
         document.getElementById(mainSVG).appendChild(parseSVG(element));
     }
@@ -127,17 +127,17 @@ function generateEntries(array) {
 
 function generatePointsOfInterests(array) {
     for (v = 0; v < array.length; v++) {
-        var arr = array[v]; // this is the general array of the poi json
-        if (arr.floor instanceof Array && arr.type == 'multiple_similar') {
+        let arr = array[v]; // this is the general array of the poi json
+        if (arr.floor instanceof Array && arr.type == "multiple_similar") {
             // for the multiple typed entries in the json file
             for (j = 0; j < arr.floor.length; j++) {
-                var innerArr = arr.floor[j];
-                var element =
+                let innerArr = arr.floor[j];
+                let element =
                     '<a class="interestpoint ' +
                     arr.building +
-                    ' ' +
+                    " " +
                     innerArr.floor +
-                    ' ' +
+                    " " +
                     arr.class +
                     '"><circle name="' +
                     innerArr.name +
@@ -149,23 +149,23 @@ function generatePointsOfInterests(array) {
                     arr.y +
                     '" onclick="pointOfInterestDetails(' +
                     v +
-                    ', ' +
+                    ", " +
                     j +
                     ');" class="' +
                     arr.class +
                     '" /></a>';
                 document.getElementById(mainSVG).appendChild(parseSVG(element));
             }
-        } else if (arr.floor instanceof Array && arr.type == 'multiple') {
+        } else if (arr.floor instanceof Array && arr.type == "multiple") {
             // for the multiple typed entries in the json file
             for (j = 0; j < arr.floor.length; j++) {
-                var innerArr = arr.floor[j];
-                var element =
+                let innerArr = arr.floor[j];
+                let element =
                     '<a class="interestpoint ' +
                     arr.building +
-                    ' ' +
+                    " " +
                     innerArr.floor +
-                    ' ' +
+                    " " +
                     innerArr.class +
                     '"><circle name="' +
                     innerArr.name +
@@ -177,7 +177,7 @@ function generatePointsOfInterests(array) {
                     arr.y +
                     '" onclick="pointOfInterestDetails(' +
                     v +
-                    ', ' +
+                    ", " +
                     j +
                     ');" class="' +
                     arr.class +
@@ -186,12 +186,12 @@ function generatePointsOfInterests(array) {
             }
         } else {
             // for the single entries
-            var element =
+            let element =
                 '<a class="interestpoint ' +
                 arr.building +
-                ' ' +
+                " " +
                 arr.floor +
-                ' ' +
+                " " +
                 arr.class +
                 '"><circle name="' +
                 arr.pointname +
@@ -213,72 +213,72 @@ function generatePointsOfInterests(array) {
 
 function generateStructures(array) {
     for (f = 0; f < array.length; f++) {
-        var event = '';
+        let event = "";
         if (array[f].class.match(/building/gi)) {
-            event = 'onclick="doActivity(\'' + array[f].name + "','" + f + '\')"';
+            event = "onclick=\"doActivity('" + array[f].name + "','" + f + "')\"";
         }
 
         if (array[f].type.match(/polygon/g)) {
-            var element =
+            let element =
                 '<polygon class="' +
-                array[f]['class'] +
+                array[f]["class"] +
                 '" id="' +
-                array[f]['name'] +
+                array[f]["name"] +
                 '" points="' +
-                array[f]['points'] +
+                array[f]["points"] +
                 '" ' +
                 event +
-                '></polygon>';
+                "></polygon>";
 
             document.getElementById(mainSVG).appendChild(parseSVG(element));
         } else if (array[f].type.match(/ellipse/g)) {
-            var element =
+            let element =
                 '<ellipse class="' +
-                array[f]['class'] +
+                array[f]["class"] +
                 '" id="' +
-                array[f]['name'] +
+                array[f]["name"] +
                 '" cx="' +
-                array[f]['cx'] +
+                array[f]["cx"] +
                 '" cy="' +
-                array[f]['cy'] +
+                array[f]["cy"] +
                 '" rx="' +
-                array[f]['rx'] +
+                array[f]["rx"] +
                 '" ry="' +
-                array[f]['ry'] +
+                array[f]["ry"] +
                 '" transform="' +
-                array[f]['transform'] +
+                array[f]["transform"] +
                 '" />';
             document.getElementById(mainSVG).appendChild(parseSVG(element));
         } else if (array[f].type.match(/path/g)) {
-            var element =
+            let element =
                 '<path class="' +
-                array[f]['class'] +
+                array[f]["class"] +
                 '" id="' +
-                array[f]['name'] +
+                array[f]["name"] +
                 '" d="' +
-                array[f]['d'] +
+                array[f]["d"] +
                 '" class="' +
-                array[f]['class'] +
+                array[f]["class"] +
                 '" ' +
                 event +
-                '/>';
+                "/>";
             document.getElementById(mainSVG).appendChild(parseSVG(element));
         } else if (array[f].type.match(/line/g)) {
-            var element =
+            let element =
                 '<line class="' +
-                array[f]['class'] +
+                array[f]["class"] +
                 '" id="' +
-                array[f]['name'] +
+                array[f]["name"] +
                 '" x1="' +
-                array[f]['x1'] +
+                array[f]["x1"] +
                 '" x2="' +
-                array[f]['x2'] +
+                array[f]["x2"] +
                 '" y1="' +
-                array[f]['y1'] +
+                array[f]["y1"] +
                 '" y2="' +
-                array[f]['y2'] +
+                array[f]["y2"] +
                 '" class="' +
-                array[f]['class'] +
+                array[f]["class"] +
                 '"/>';
             document.getElementById(mainSVG).appendChild(parseSVG(element));
         }
