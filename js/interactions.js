@@ -278,18 +278,16 @@ function resetElements() {
     // reset previous entry point's class to remove css animation
     try {
         document.getElementsByClassName("currentpoint")[0].removeAttribute("class");
-    } catch (e) {
-        // alert(e);
-    }
+    } catch (e) {}
 }
 
-var interestPoints = true;
 // used by the checkbox that enables/disables entry points
+var interestPoints = true;
 function interestPointsInteraction() {
-    var bldgSelect = document.getElementById("filterbldg");
-    var flrSelect = document.getElementById("filterfloor");
-    var rmSelect = document.getElementById("filterroom");
-    //var detailsChecked = document.getElementById("entry").checked;
+    let bldgSelect = document.getElementById("filterbldg");
+    let flrSelect = document.getElementById("filterfloor");
+    let rmSelect = document.getElementById("filterroom");
+
     if (interestPoints == true) {
         // when unchecked
         interestPoints = false;
@@ -401,7 +399,7 @@ function filterPoints() {
         allPoints = document.getElementsByClassName("interestpoint");
         for (let i = 0; i < allPoints.length; ++i) {
             // rehide/hide all
-            allPoints[u].removeAttribute("style");
+            allPoints[i].removeAttribute("style");
         }
     } else {
         // show filtered points
