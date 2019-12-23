@@ -337,12 +337,14 @@ div#options select {
 div#details {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    min-height: 280px;
+    max-height: 300px;
     width: 70vw;
     height: 50vh;
-    margin-left: -35vw;
-    margin-top: -25vh;
     background: #fff;
     opacity: 1;
     z-index: 1000;
@@ -366,7 +368,7 @@ div#details.point {
 
 input[type="button"] {
     width: 5rem;
-    height: 1.5rem;
+    height: 2rem;
     background: #000;
     border: 3px solid #222;
     color: #fff;
@@ -374,6 +376,7 @@ input[type="button"] {
     font-weight: bold;
     margin: 0.5rem;
     border-radius: 0.25rem;
+    padding: 5px;
 }
 
 input[type="button"]:hover {
@@ -387,7 +390,7 @@ input.save {
 }
 
 div#details h1 {
-    font-size: 1.5rem;
+    font-size: 20px;
     padding: 0.5rem 0 0 0;
     margin: 0;
     text-transform: uppercase;
