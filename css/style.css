@@ -307,7 +307,7 @@ div#options .twocolumns .second.chk {
 }
 
 .checkbox-custom:focus + .checkbox-custom-label {
-    outline: 1px solid #ddd; /* focus style */
+    outline: 1px solid #ddd;
 }
 
 div#options h2.main {
