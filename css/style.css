@@ -208,21 +208,23 @@ form#gateform img {
 }
 
 div#options {
+    background: #fff;
     display: none;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    width: 70vw;
-    height: 45vh;
-    margin-left: -35vw;
-    margin-top: -22.5vh;
-    background: #fff;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 280px;
+    min-height: 275px;
     opacity: 0.9;
     z-index: 500;
     text-align: center;
     color: #000;
     box-shadow: 0 0 0 5px #000;
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 10px;
+    margin: auto;
     border-radius: 0.5rem;
 }
 
