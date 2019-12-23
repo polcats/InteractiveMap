@@ -2,15 +2,16 @@
     CSS3 Validation Result: No errors
 */
 
+* {
+    font-family: UbuntuL;
+}
+
 body {
     background: #222;
     padding: 0px;
     margin: 0px;
     font-size: 62.5%;
     overflow: hidden;
-}
-* {
-    font-family: UbuntuL;
 }
 
 #setup {
@@ -26,18 +27,22 @@ body {
     text-align: center;
     display: table;
 }
+
 #setup * {
     font-family: UbuntuL;
 }
+
 #setup #landing {
     text-align: center;
 }
+
 #setup div.q {
     display: table-cell;
     vertical-align: middle;
     width: 80vw;
     height: 100%;
 }
+
 #setup h1 {
     font-size: 5vh;
     color: #fff;
@@ -45,6 +50,7 @@ body {
     margin: 0;
     text-transform: uppercase;
 }
+
 #setup img#logo {
     display: block;
     width: 70vw;
@@ -52,6 +58,7 @@ body {
     margin: 0 auto;
     clear: both;
 }
+
 #setup input[type="button"] {
     width: 50vw;
     max-width: 200px;
@@ -59,25 +66,31 @@ body {
     font-size: 1.5rem;
     padding: 0.5rem;
 }
+
 form#gateform {
     height: 70%;
     overflow: auto;
 }
+
 form#gateform div {
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
 }
+
 form#gateform div.choice:nth-of-type(odd) {
     background: #222;
     color: #000;
 }
+
 form#gateform div.choice:nth-of-type(even) {
     background: #000;
 }
+
 form#gateform div#space {
     height: 3rem;
 }
+
 form#gateform img {
     border: 3px solid #fff;
     margin: 0 auto;
@@ -93,21 +106,25 @@ form#gateform img {
     opacity: 0;
     position: absolute;
 }
+
 .radio-custom,
 .radio-custom-label {
     display: block;
     margin: 5px;
     cursor: pointer;
 }
+
 .radio-custom-label {
     position: relative;
     font-size: 1.8rem;
     color: #fff;
     text-transform: uppercase;
 }
+
 .radio-custom-label span {
     margin: 0.5rem;
 }
+
 .radio-custom + .radio-custom-label:before {
     content: "";
     background: #fff;
@@ -143,7 +160,7 @@ form#gateform img {
     top: 0px;
     left: 0px;
     padding: 0.3rem;
-    z-index: 100000;
+    z-index: 100;
 }
 #bar input[type="image"] {
     margin: 0 0.2rem 0 0.2rem;
@@ -177,6 +194,7 @@ form#gateform img {
 #options select:disabled {
     background: #ddd;
 }
+
 #options input[type="button"] {
     font-size: 1.1rem;
     margin: 0.5rem auto;
@@ -188,52 +206,63 @@ form#gateform img {
     height: 1024px;
     margin: 0 auto;
 }
+
 div#options {
+    background: #fff;
     display: none;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    width: 70vw;
-    height: 45vh;
-    margin-left: -35vw;
-    margin-top: -22.5vh;
-    background: #fff;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 280px;
+    min-height: 275px;
     opacity: 0.9;
-    z-index: 1000;
+    z-index: 500;
     text-align: center;
     color: #000;
     box-shadow: 0 0 0 5px #000;
-    padding: 0.5rem 0rem 0.5rem 0rem;
+    padding: 10px;
+    margin: auto;
     border-radius: 0.5rem;
 }
+
 div#options form {
     height: 100%;
 }
+
 div#options div#cboxcontainer {
     text-align: left;
     width: 50%;
     margin: 0 auto;
     padding: 0.5rem;
 }
+
 div#options .twocolumns {
     margin-top: 0rem;
 }
+
 div#options .twocolumns .clear {
     display: block;
     clear: both;
 }
+
 div#options .twocolumns .first {
     width: 20%;
     float: left;
 }
+
 div#options .twocolumns .second {
     width: 65%;
     float: left;
     margin-left: 0.5rem;
 }
+
 div#options .twocolumns .first.lbl {
     width: 60%;
 }
+
 div#options .twocolumns .second.chk {
     width: 10%;
     float: left;
@@ -244,6 +273,7 @@ div#options .twocolumns .second.chk {
     opacity: 0;
     position: absolute;
 }
+
 .checkbox-custom,
 .checkbox-custom-label {
     display: inline-block;
@@ -251,11 +281,13 @@ div#options .twocolumns .second.chk {
     margin: 0.5rem;
     cursor: pointer;
 }
+
 .checkbox-custom-label {
     position: relative;
     font-size: 1.2rem;
     margin: 0;
 }
+
 .checkbox-custom + .checkbox-custom-label:before {
     content: "";
     background: #fff;
@@ -268,12 +300,14 @@ div#options .twocolumns .second.chk {
     margin-right: 1rem;
     text-align: center;
 }
+
 .checkbox-custom:checked + .checkbox-custom-label:before {
     background: #222;
     box-shadow: inset 0px 0px 0px 2px #fff;
 }
+
 .checkbox-custom:focus + .checkbox-custom-label {
-    outline: 1px solid #ddd; /* focus style */
+    outline: 1px solid #ddd;
 }
 
 div#options h2.main {
@@ -282,6 +316,7 @@ div#options h2.main {
     font-size: 1.3rem;
     text-transform: uppercase;
 }
+
 div#options h3 {
     font-size: 1rem;
     padding: 0;
@@ -302,12 +337,14 @@ div#options select {
 div#details {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    min-height: 280px;
+    max-height: 300px;
     width: 70vw;
     height: 50vh;
-    margin-left: -35vw;
-    margin-top: -25vh;
     background: #fff;
     opacity: 1;
     z-index: 1000;
@@ -328,9 +365,10 @@ div#details.point {
     font-size: 1.1rem;
     margin: 0.5rem auto;
 }
+
 input[type="button"] {
     width: 5rem;
-    height: 1.5rem;
+    height: 2rem;
     background: #000;
     border: 3px solid #222;
     color: #fff;
@@ -338,35 +376,41 @@ input[type="button"] {
     font-weight: bold;
     margin: 0.5rem;
     border-radius: 0.25rem;
+    padding: 5px;
 }
+
 input[type="button"]:hover {
     background: #ddd;
     color: #000;
 }
+
 input.edit,
 input.save {
     margin: 0.2rem 0 0 0;
 }
 
 div#details h1 {
-    font-size: 1.5rem;
+    font-size: 20px;
     padding: 0.5rem 0 0 0;
     margin: 0;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 div#details h3.entry {
     font-size: 1.2rem;
     margin: 10% 0% 10% 0%;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 div#details #content {
     padding: 0;
     margin: 0;
     font-size: 1rem;
     overflow-y: auto;
 }
+
 div#details p {
     padding: 0.25rem;
     margin: 0;
@@ -374,13 +418,16 @@ div#details p {
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 div#details p.list {
     margin: 0.1rem;
 }
+
 div#details #textcontainer {
     display: none;
     height: 70%;
 }
+
 div#details textarea {
     font-size: 1.2rem;
     color: #fff;
@@ -397,6 +444,7 @@ div#details textarea {
 div#details textarea.desc {
     height: 30%;
 }
+
 div#details textarea.note {
     height: 30%;
     background: #222;

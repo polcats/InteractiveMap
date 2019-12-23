@@ -1,7 +1,8 @@
 function storeDataInLS(localID) {
     if (localStorage.getItem(localID) == undefined) {
         // needs eval to read localID as a variable
-        eval("var temp = JSON.stringify(" + localID + ")");
+        let temp;
+        eval("temp = JSON.stringify(" + localID + ")");
         localStorage.setItem(localID, temp);
     }
 }
@@ -28,9 +29,11 @@ function parseSVG(s) {
     let div = document.createElementNS("http://www.w3.org/1999/xhtml", "div");
     div.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg">' + s + "</svg>";
     let frag = document.createDocumentFragment();
+
     while (div.firstChild.firstChild) {
         frag.appendChild(div.firstChild.firstChild);
     }
+
     return frag;
 }
 
